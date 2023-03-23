@@ -18,9 +18,7 @@ body {
     padding: 2% 0;
 }
 /* navbar styles start */
-.navbar__btn_burger {
-    display: none;
-}
+
 .navbar {
     /* position: fixed; */
 
@@ -69,18 +67,17 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.header__block_left {
-    width: 40%;
+.header_block_left {
+    width: 60%;
 }
 .header__block_right img {
-    width: 160%;
-    margin-top: 60%;
-    margin-right: 40%;
-    height: 450px;
+    width: 500px;
+    /* margin-top: 60%;*/
+    /* margin-right: 30%; */
+    /* height: 450px; */
     border-radius: 10px;
 }
-header__bnt1 {
-}
+
 .auth__button {
     width: 200px;
     height: 40px;
@@ -115,7 +112,7 @@ header__bnt1 {
     font-weight: 700;
 
     font-size: 55px;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-bottom: 10px;
     line-height: 1;
 }
@@ -159,17 +156,25 @@ header__bnt1 {
     font-weight: 600;
     padding: 1%;
 }
-.header__block_right {
+/* .header__block_right {
     margin-top: -13%;
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     position: relative;
-
     z-index: -1;
     animation: linear rights 1.5s;
     transition: all 0.7s;
+} */
+
+.header_main_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
 }
+/* ! [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[*/
 .services {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -209,7 +214,7 @@ header__bnt1 {
 }
 .services {
     padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
 }
 .services__list {
     align-items: center;
@@ -247,4 +252,41 @@ header__bnt1 {
 .services__item h3 {
     color: white;
     font-size: 24px;
+}
+.infos2 > h3 {
+    line-height: 2;
+    font-size: 24px;
+    width: 90%;
+}
+
+.sidebar {
+    width: 400px;
+    background-color: rgb(3, 3, 37, 0.96);
+    height: 120vh;
+    position: relative;
+    /* display: none;    */
+}
+.sidebar > img {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.sidebar > ul {
+    position: absolute;
+    left: 80px;
+    top: 120px;
+    font-size: 34px;
+}
+.sidebar li {
+    margin-bottom: 40px;
+}
+.sidebarMenu {
+    /* display: none; */
+    /* width: 40px; */
+    position: absolute;
+    right: -80px;
+    top: -20px;
+}
+.burger_menu_img {
+    width: 40px;
 }

@@ -7,19 +7,13 @@ import art from "../../image/AI.jpg";
 import about from "../../image/about.jpg";
 import Slider from "./Slider";
 import { prodArr, prodArr2 } from "../../consts";
-
+import "../Header/headerAdaptive.css";
 const Home = () => {
     const [cardState, setCardState] = useState(false);
     return (
         <div className="container">
             {/* <header> */}
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "space-around",
-                    alignItems: "center",
-                }}
-            >
+            <div className="header_main_block">
                 <div className="header_block_left" data-aos="fade-right">
                     <h2 className="header__title_left">
                         Family owners business <br /> of programmers
@@ -243,15 +237,9 @@ const Home = () => {
             {/*  */}
 
             <div style={{ marginTop: "10%" }} className="main_duble">
-                <div className="infos">
-                    <h3
-                        style={{
-                            lineHeight: "2",
-                            width: "90%",
-                            fontSize: "23px",
-                        }}
-                    >
-                        <h1>About Us </h1>
+                <div className="infos2">
+                    <h1>About Us </h1>
+                    <h3>
                         <br />
                         About us how good we are, we are engineers and
                         programmers of the 4th generation. We have developed our
