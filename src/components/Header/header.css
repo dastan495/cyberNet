@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(29, 29, 107);
+  background-color: rgb(3, 3, 37);
   color: white;
   font-family: "Nunito Sans", sans-serif;
   margin: 0;
@@ -7,7 +7,9 @@ body {
   width: 100%;
   height: 100%;
 }
-
+:root {
+  --textsadap: calc(1vw + 1vh);
+}
 .container {
   width: 90%;
   margin-left: auto;
@@ -43,6 +45,7 @@ body {
 .list__item > a {
   text-decoration: none;
   color: white;
+  font-size: calc(var(--textsadap) * 1);
 }
 
 .list__item > a:hover {

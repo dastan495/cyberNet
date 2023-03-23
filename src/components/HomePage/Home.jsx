@@ -4,6 +4,8 @@ import banner from "../../image/banner.jpg";
 import "../Footer/footer.css";
 import "./home.css";
 import art from "../../image/art.jpg";
+import about from "../../image/about.jpg";
+import Slider from "./Slider";
 
 const Home = () => {
   return (
@@ -84,10 +86,29 @@ const Home = () => {
               book meeting
             </button>
           </li>
+
+          <li style={{}} className="services__item" data-aos="fade-up">
+            {/* <img className="services__icon" src={opyt} alt="" /> */}
+            <h3 style={{ fontSize: "50px" }} className="services_desc">
+              Up to $ 3900
+            </h3>
+            <p
+              style={{ fontSize: "30px", width: "100%", alignItems: "center" }}
+            >
+              Building a website using
+            </p>
+            <p
+              style={{ fontSize: "30px", width: "100%", alignItems: "center" }}
+            >
+              Order now and get free high-speed hosting
+            </p>
+            <button className="header__btn1" type="">
+              book meeting
+            </button>
+          </li>
         </ul>
       </div>
 
-    
       {/*  */}
       <div className="main_duble">
         <div>
@@ -137,7 +158,6 @@ const Home = () => {
               <li>Branding</li>
               <li>Search engine optimization(SEO)</li>
             </ul>
-           
           </div>
           <div className="cols__wprap">
             <h2>Web design</h2>
@@ -163,8 +183,43 @@ const Home = () => {
               <li>Community Management</li>
             </ul>
           </div>
-          </div>
-          </div>
+        </div>
+      </div>
+      {/*  */}
+
+      <div style={{ marginTop: "10%" }} className="main_duble">
+        <div className="infos">
+          <h3 style={{ lineHeight: "2", width: "90%", fontSize: "23px" }}>
+            <h1>About Us </h1>
+            <br />
+            About us how good we are, we are engineers and programmers of the
+            4th generation. We have developed our own methods for creating and
+            promoting websites. AI is of particular importance in the modern
+            world, so we are actively using AI technology in business.
+          </h3>
+        </div>
+        <div>
+          <img src={about} alt="" />
+        </div>
+      </div>
+      {/*  */}
+      {/*  */}
+      <div className="photo_block">
+        <h2
+          style={{
+            fontSize: "35px",
+            color: "white",
+            marginLeft: "auto",
+            marginRight: "auto",
+            textAlign: "center",
+            alignItems: "center",
+          }}
+        >
+          COMMUNITY
+        </h2>
+        <Slider />
+      </div>
+      {/*  */}
     </div>
   );
 };
