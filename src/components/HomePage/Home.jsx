@@ -87,6 +87,38 @@ const Home = () => {
         </ul>
       </div>
 
+    
+      {/*  */}
+      <div className="main_duble">
+        <div>
+          <img src={art} alt="" />
+        </div>
+        <div className="infos">
+          <h3>
+            Artificial intelligence (AI) can have a significant impact on
+            business promotion.
+          </h3>
+          <br />
+          <h3>
+            AI can quickly analyze large amounts of data and identify trends and
+            patterns that can help determine which products or services are most
+            in demand by customers. This can help a business customize their
+            marketing and sales strategy.
+          </h3>
+          <br />
+          <h3>
+            AI can help businesses automate routine tasks, which can save time
+            and resources.
+          </h3>
+          <br />
+          <h3>
+            Overall, AI can help businesses streamline their operations, improve
+            efficiency, and improve product and customer experience.
+          </h3>
+          <br />
+        </div>
+      </div>
+      {/*  */}
       <div className="white__zone">
         <h1 className="ours">Our services</h1>
         <div className="wrap__white">
@@ -133,36 +165,6 @@ const Home = () => {
           </div>
           </div>
           </div>
-      {/*  */}
-      <div className="main_duble">
-        <div>
-          <img src={art} alt="" />
-        </div>
-        <div className="infos">
-          <h3>
-            Artificial intelligence (AI) can have a significant impact on
-            business promotion.
-          </h3>
-          <br />
-          <h3>
-            AI can quickly analyze large amounts of data and identify trends and
-            patterns that can help determine which products or services are most
-            in demand by customers. This can help a business customize their
-            marketing and sales strategy.
-          </h3>
-          <br />
-          <h3>
-            AI can help businesses automate routine tasks, which can save time
-            and resources.
-          </h3>
-          <br />
-          <h3>
-            Overall, AI can help businesses streamline their operations, improve
-            efficiency, and improve product and customer experience.
-          </h3>
-          <br />
-        </div>
-      </div>
     </div>
   );
 };
