@@ -1,6 +1,9 @@
 import React from "react";
 import "../Header/header.css";
 import banner from "../../image/banner.jpg";
+import "../Footer/footer.css";
+import "./home.css";
+import art from "../../image/art.jpg";
 
 const Home = () => {
   return (
@@ -38,19 +41,80 @@ const Home = () => {
           The use of AI is essential for businesses to remain competitive in the
           marketplace and meet customer needs and preferences.
         </h1>
-        <ul className="services__list">
-          <li className="services__item" data-aos="fade-up">
+        <ul
+          style={{ textAlign: "center", alignItems: "center" }}
+          className="services__list"
+        >
+          <li style={{}} className="services__item" data-aos="fade-up">
             {/* <img className="services__icon" src={opyt} alt="" /> */}
-            <h3 className="services_desc">up to $ 3900</h3>
-            <p>Building a website using AI</p>
-            <p>Order now and get free high-speed hosting</p>
+            <h3 style={{ fontSize: "50px" }} className="services_desc">
+              Up to $ 3900
+            </h3>
+            <p
+              style={{ fontSize: "30px", width: "100%", alignItems: "center" }}
+            >
+              Building a website using
+            </p>
+            <p
+              style={{ fontSize: "30px", width: "100%", alignItems: "center" }}
+            >
+              Order now and get free high-speed hosting
+            </p>
+            <button className="header__btn1" type="">
+              book meeting
+            </button>
           </li>
 
-          <li className="services__item" data-aos="fade-up">
-            {/* <img className="services__icon" src={free1} alt="" /> */}
-            <h3 className="services_desc">Бесплатный коворкинг</h3>
+          <li style={{}} className="services__item" data-aos="fade-up">
+            {/* <img className="services__icon" src={opyt} alt="" /> */}
+            <h3 style={{ fontSize: "50px" }} className="services_desc">
+              Up to $ 3900
+            </h3>
+            <p
+              style={{ fontSize: "30px", width: "100%", alignItems: "center" }}
+            >
+              Building a website using
+            </p>
+            <p
+              style={{ fontSize: "30px", width: "100%", alignItems: "center" }}
+            >
+              Order now and get free high-speed hosting
+            </p>
+            <button className="header__btn1" type="">
+              book meeting
+            </button>
           </li>
         </ul>
+      </div>
+      {/*  */}
+      <div className="main_duble">
+        <div>
+          <img src={art} alt="" />
+        </div>
+        <div className="infos">
+          <h3>
+            Artificial intelligence (AI) can have a significant impact on
+            business promotion.
+          </h3>
+          <br />
+          <h3>
+            AI can quickly analyze large amounts of data and identify trends and
+            patterns that can help determine which products or services are most
+            in demand by customers. This can help a business customize their
+            marketing and sales strategy.
+          </h3>
+          <br />
+          <h3>
+            AI can help businesses automate routine tasks, which can save time
+            and resources.
+          </h3>
+          <br />
+          <h3>
+            Overall, AI can help businesses streamline their operations, improve
+            efficiency, and improve product and customer experience.
+          </h3>
+          <br />
+        </div>
       </div>
     </div>
   );
