@@ -1,10 +1,11 @@
 .main_duble {
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     /* flex-wrap: wrap; */
 }
 .main_duble img {
-    width: 550px;
+    width: 500px;
     height: 500px;
     /* width: 100%;
     height: 100%; */
@@ -13,8 +14,9 @@
 }
 .main_duble h3 {
     width: 95%;
-    padding-left: 12%;
+    /* padding-left: 12%; */
     line-height: 2;
+    margin-left: 15px;
 }
 .swiper {
     margin-top: 5%;
@@ -78,4 +80,5 @@
     border: 2px solid white;
     color: white;
     border-radius: 20px;
+    margin-bottom: 30px;
 }

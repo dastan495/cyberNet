@@ -4,13 +4,13 @@ import Header from "./components/Header/Header";
 import MainRoutes from "./Route/MainRoutes";
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <MainRoutes />
-      <Footer />
-    </div>
-  );
+    return (
+        <div style={{ position: "relative" }}>
+            <Header />
+            <MainRoutes />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
