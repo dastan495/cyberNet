@@ -1,0 +1,17 @@
+.main_duble {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.main_duble img {
+  width: 550px;
+  height: 500px;
+}
+.main_duble h3 {
+  width: 95%;
+  padding-left: 12%;
+  line-height: 2;
+}
+.infos {
+  /* margin-left: 32%; */
+}
