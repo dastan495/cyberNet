@@ -1,0 +1,32 @@
+.main_meeting {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  align-items: center;
+  /* text-align: center; */
+  padding-top: 10%;
+  /* align-items: center; */
+}
+.main_meeting1 input {
+  width: 200%;
+  border-radius: 20px;
+  border: none;
+  height: 50px;
+}
+.main_meeting1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_meeting p {
+  font-size: 25px;
+  width: 100%;
+}
+.met1 {
+  padding-top: 10%;
+  flex-wrap: wrap;
+}
+.met1 input {
+  width: 300%;
+  height: 150px;
+}
