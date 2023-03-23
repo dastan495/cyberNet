@@ -61,6 +61,7 @@ background: linear-gradient(90deg, rgba(57,197,230,1) 23%, rgba(48,227,216,1) 61
     background-color: #00000069;
     padding: 3%;
     border-radius: 30px;
+    margin-top: 10%;
 }
 .ours{
     text-align: center;
