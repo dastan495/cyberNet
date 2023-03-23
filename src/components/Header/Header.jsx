@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import { Navigate } from "react-router-dom";
+import logo from "../../image/logo.png";
 
 const Header = () => {
   return (
@@ -9,18 +10,18 @@ const Header = () => {
         <img
           onClick={() => Navigate("/")}
           className="navbar__logo"
-          //   src={logo}
+          src={logo}
           alt="navbar logo"
         />
         <ul className="navbar__list">
           <li className="list__item">
             <a onClick={() => Navigate("/")} href="#">
-              главная
+              about us
             </a>
           </li>
           <li className="list__item">
             <a onClick={() => Navigate("/course")} href="#">
-              курсы
+              best offers
             </a>
           </li>
           <li className="list__item">
@@ -31,21 +32,26 @@ const Header = () => {
               }}
               href="#"
             >
-              методика
+              our services
             </a>
           </li>
           <li className="list__item">
             <a onClick={() => Navigate("/contacts")} href="#">
-              контакты
+              portfolio
             </a>
           </li>
           <li className="list__item">
             <a onClick={() => Navigate("/event")} href="#">
-              вебинары
+              blog
             </a>
           </li>
         </ul>
+
         {/* <input type="text" className="navbar__input" /> */}
+
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <button className="auth__button">make meeting</button>
+        </div>
 
         <img
           src="./images/burger_btn.png"
