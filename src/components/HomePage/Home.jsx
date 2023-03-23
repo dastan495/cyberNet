@@ -86,6 +86,53 @@ const Home = () => {
           </li>
         </ul>
       </div>
+
+      <div className="white__zone">
+        <h1 className="ours">Our services</h1>
+        <div className="wrap__white">
+          <div className="cols__wprap">
+            <h2>Development</h2>
+            <ul>
+              <li>Full stack development</li>
+              <li>Ecommerce Development</li>
+              <li>CRM system</li>
+              <li>Web App</li>
+              <li>Mobile Development</li>
+              <li>Joomla + VirtueMart</li>
+              <li>Magento</li>
+              <li>API Integration</li>
+              <li>Direzione Tecnica</li>
+              <li>Branding</li>
+              <li>Search engine optimization(SEO)</li>
+            </ul>
+           
+          </div>
+          <div className="cols__wprap">
+            <h2>Web design</h2>
+            <ul>
+              <li>Landing Page</li>
+              <li>Siti Web</li>
+              <li>eCommerce</li>
+              <li>Web App</li>
+              <li>UI / UX</li>
+              <li>Branding</li>
+            </ul>
+          </div>
+          <div className="cols__wprap">
+            <h2>Advertising</h2>
+            <ul>
+              <li>Campagne Pubblicitarie</li>
+              <li>SEO</li>
+              <li>SEM</li>
+              <li>Google ADS</li>
+              <li>Social Media Ads</li>
+              <li>Strategia</li>
+              <li>Social Media Management</li>
+              <li>Community Management</li>
+            </ul>
+          </div>
+          </div>
+          </div>
       {/*  */}
       <div className="main_duble">
         <div>
