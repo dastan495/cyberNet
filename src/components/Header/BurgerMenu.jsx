@@ -10,11 +10,21 @@ const BurgerMenu = ({ setMenuState }) => {
                 width="50px"
             />
             <ul>
-                <li className="list__item">about us</li>
-                <li className="list__item">best offers</li>
-                <li className="list__item">our services</li>
-                <li className="list__item">portfolio</li>
-                <li className="list__item">blog</li>
+                <li className="list__item">
+                    <a href="#about_us">about us</a>
+                </li>
+                <li className="list__item">
+                    <a href="#best_offers">best offers</a>
+                </li>
+                <li className="list__item">
+                    <a href="#our_services">our services</a>{" "}
+                </li>
+                <li className="list__item">
+                    <a href="#portfolio">portfolio</a>{" "}
+                </li>
+                <li className="list__item">
+                    <a href="#blog">blog</a>{" "}
+                </li>
             </ul>
         </div>
     );
