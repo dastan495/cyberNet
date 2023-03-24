@@ -8,8 +8,11 @@ import about from "../../image/about.jpg";
 import Slider from "./Slider";
 import { prodArr, prodArr2 } from "../../consts";
 import "../Header/headerAdaptive.css";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
     const [cardState, setCardState] = useState(false);
+    const navigate = useNavigate();
+
     return (
         <div className="container">
             {/* <header> */}
@@ -24,7 +27,7 @@ const Home = () => {
                         sites using AI Experience in programming 30+ Results
                         Guarantee
                     </p>
-                    <button className="header__btn">
+                    <button className="header__btn" onClick={() => navigate("/meeting")}>
                         make meeting
                         {/* <img
                             className="btn__icon"
@@ -236,7 +239,7 @@ const Home = () => {
             </div>
             {/*  */}
 
-            <div style={{ marginTop: "10%" }} className="main_duble">
+            <div style={{ marginTop: "10%" }} id="about_us" className="main_duble">
                 <div className="infos2">
                     <h1>About Us </h1>
                     <h3>
