@@ -19,7 +19,7 @@ export default function App() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={2}
                 spaceBetween={30}
                 centeredSlides={true}
                 loop={true}

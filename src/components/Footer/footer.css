@@ -32,6 +32,7 @@
     font-size: calc(var(--textadap) * 2.5);
     padding-bottom: 15px;
     border-bottom: 1px solid #fff;
+    cursor: pointer;
 }
 .flexbox {
     display: flex;
