@@ -48,6 +48,12 @@
         /* height: 100%; */
         padding: 10% 3%;
     }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        display: block !important;
+    }
 }
 @media (max-width: 950px) {
     .navbar__list {
@@ -61,6 +67,10 @@
     }
     .navbar__logo {
         width: 20%;
+    }
+    .header__block_right img {
+        margin-bottom: 30px;
+        /* display: none !important; */
     }
 }
 @media (min-width: 950px) {
