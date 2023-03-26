@@ -4,13 +4,14 @@
     /* align-items: center; */
     color: white;
     width: 100%;
+    /* height: 620px; */
     margin-left: auto;
     margin-right: auto;
     /* flex-wrap: wrap; */
 }
 .main_duble img {
     width: 500px;
-    height: 500px;
+    height: 100%;
     /* width: 100%;
     height: 100%; */
     object-fit: cover;
@@ -32,6 +33,9 @@
     padding-top: 2%;
     padding-bottom: 5%;
     background-image: url(../../image/Group\ 697.png);
+}
+.img2 {
+    display: none;
 }
 .swiper-slide {
     text-align: center;
@@ -91,6 +95,9 @@
 .my_vanta {
     /* position: absolute; */
     width: 100%;
-    height: 100vh;
+    min-height: 90vh;
     /* top: 0px; */
+}
+.about_block_img {
+    height: 100%;
 }

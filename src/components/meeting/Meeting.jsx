@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./meeting.css";
 import axios from "axios";
+import Header from "../Header/Header";
+import { useNavigate } from "react-router-dom";
 const Meeting = () => {
     const [visible, setVisible] = useState(false);
     const [name, setName] = useState("");
@@ -14,6 +16,7 @@ const Meeting = () => {
     const [day, setDay] = useState("");
     const [time, setTime] = useState("");
     const [comment, setComment] = useState("");
+    const navigate = useNavigate();
     const send_mail = () => {
         const data = new FormData();
         data.append("full_name", name);
@@ -39,6 +42,7 @@ const Meeting = () => {
     };
     return (
         <div>
+            <Header />
             <div
                 style={{ color: "black", padding: "20px 20px" }}
                 className={visible === false ? "container" : "hidden_block"}
@@ -132,9 +136,14 @@ const Meeting = () => {
                     </button>
                 </div>
             </div>
-            <div className={visible ? "container" : "hidden_block"}>
-                <h1>Book meeting</h1>
-                <h3>Fill out the form and we will come as soon as possible</h3>
+            <div
+                style={{ padding: "20px" }}
+                className={visible ? "container" : "hidden_block"}
+            >
+                <h1 style={{ color: "black" }}>Book meeting</h1>
+                <h3 style={{ color: "black" }}>
+                    Fill out the form and we will come as soon as possible
+                </h3>
                 <div className="main_meeting1">
                     <div style={{ width: "40%" }}>
                         <div className="main_meeting">
@@ -185,6 +194,7 @@ const Meeting = () => {
                     <button
                         onClick={() => {
                             send_mail();
+                            navigate("/");
                         }}
                         className="next_btn"
                     >

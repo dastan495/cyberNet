@@ -2,7 +2,7 @@ import React from "react";
 import closeIcon from "../../image/close.png";
 const BurgerMenu = ({ setMenuState }) => {
     return (
-        <div className="sidebar">
+        <div className="sidebar" style={{ zIndex: "20" }}>
             <img
                 onClick={() => setMenuState(false)}
                 src={closeIcon}
@@ -11,27 +11,47 @@ const BurgerMenu = ({ setMenuState }) => {
             />
             <ul>
                 <li className="list__item">
-                    <a style={{ color: "white" }} href="#about_us">
+                    <a
+                        onClick={() => setMenuState(false)}
+                        style={{ color: "white" }}
+                        href="#about_us"
+                    >
                         about us
                     </a>
                 </li>
                 <li className="list__item">
-                    <a style={{ color: "white" }} href="#best_offers">
+                    <a
+                        onClick={() => setMenuState(false)}
+                        style={{ color: "white" }}
+                        href="#best_offers"
+                    >
                         best offers
                     </a>
                 </li>
                 <li className="list__item">
-                    <a style={{ color: "white" }} href="#our_services">
+                    <a
+                        onClick={() => setMenuState(false)}
+                        style={{ color: "white" }}
+                        href="#our_services"
+                    >
                         our services
                     </a>{" "}
                 </li>
                 <li className="list__item">
-                    <a style={{ color: "white" }} href="#portfolio">
+                    <a
+                        onClick={() => setMenuState(false)}
+                        style={{ color: "white" }}
+                        href="#portfolio"
+                    >
                         portfolio
                     </a>{" "}
                 </li>
                 <li className="list__item">
-                    <a style={{ color: "white" }} href="#blog">
+                    <a
+                        onClick={() => setMenuState(false)}
+                        style={{ color: "white" }}
+                        href="#blog"
+                    >
                         blog
                     </a>{" "}
                 </li>
