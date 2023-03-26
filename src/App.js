@@ -5,7 +5,7 @@ import MainRoutes from "./Route/MainRoutes";
 
 function App() {
     return (
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative", overflowX: "hidden" }}>
             {/* <Header /> */}
             <MainRoutes />
             <Footer />

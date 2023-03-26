@@ -1,0 +1,30 @@
+.up_navbar {
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.upNav_email {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.upNav_email > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+.upNav_number {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.upNav_number > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}

@@ -14,6 +14,10 @@ import { useNavigate } from "react-router-dom";
 import aboutUsImg from "../../image/aboutAs.jpg";
 import NET from "vanta/dist/vanta.net.min";
 import BurgerMenu from "../Header/BurgerMenu";
+import UpNavbar from "../Header/UpNavbar/UpNavbar";
+import UsAi from "../../image/UsAI.png";
+import UsAi_img1 from "../../image/UsAi_img1.png";
+import UsAi_img2 from "../../image/UsAi_img2.png";
 const Home = (props) => {
     const [cardState, setCardState] = useState(false);
     const navigate = useNavigate();
@@ -51,6 +55,7 @@ const Home = (props) => {
                 </div>
             )}
             <div className="my_vanta" style={{ zIndex: "1" }} ref={myRef}>
+                <UpNavbar />
                 <Header setMenuState={setMenuState} />
                 <div className="header_main_block">
                     <div className="header_block_left" data-aos="fade-right">
@@ -84,17 +89,15 @@ const Home = (props) => {
             {/* </header> */}
 
             <div className="services" id="best_offers">
+                <img className="UsAI" src={UsAi} alt="" />
                 <h1 className="services__title_main" data-aos="fade-up">
                     The use of AI is essential for businesses to remain
                     competitive in the marketplace and meet customer needs and
                     preferences.
                 </h1>
-                <ul
-                    style={{ textAlign: "center", alignItems: "center" }}
-                    className="services__list"
-                >
+                <ul className="services__list">
                     <li className="services__item" data-aos="fade-up">
-                        {/* <img className="services__icon" src={opyt} alt="" /> */}
+                        <img src={UsAi_img1} alt="" />
                         <h3 className="services_desc">Up to $ 3900</h3>
                         <p>Building a website using</p>
                         <p>Order now and get free high-speed hosting</p>
@@ -108,21 +111,7 @@ const Home = (props) => {
                     </li>
 
                     <li className="services__item" data-aos="fade-up">
-                        {/* <img className="services__icon" src={opyt} alt="" /> */}
-                        <h3 className="services_desc">Up to $ 3900</h3>
-                        <p>Building a website using</p>
-                        <p>Order now and get free high-speed hosting</p>
-                        <button
-                            onClick={() => navigate("/meeting")}
-                            className="header__btn1"
-                            type=""
-                        >
-                            book meeting
-                        </button>
-                    </li>
-
-                    <li className="services__item" data-aos="fade-up">
-                        {/* <img className="services__icon" src={opyt} alt="" /> */}
+                        <img src={UsAi_img2} alt="" />
                         <h3 className="services_desc">Up to $ 3900</h3>
                         <p>Building a website using</p>
                         <p>Order now and get free high-speed hosting</p>
@@ -141,14 +130,12 @@ const Home = (props) => {
             <div className="main_duble ">
                 <div className="about_block_img">
                     <img className="img1" src={art} alt="" />
-                    <img className="img2" src={art2} alt="" />
                 </div>
                 <div
-                    className="infos infos2"
+                    className="infos"
                     style={{
                         backgroundImage: `url(${aboutUsImg})`,
                         backgroundRepeat: "no-repeat",
-                        // backgroundSize: "100%",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
@@ -172,11 +159,11 @@ const Home = (props) => {
                         save time and resources.
                     </h3>
                     <br />
-                    <h3>
+                    <h2 className="big_h3">
                         Overall, AI can help businesses streamline their
                         operations, improve efficiency, and improve product and
                         customer experience.
-                    </h3>
+                    </h2>
                     <br />
                 </div>
             </div>
