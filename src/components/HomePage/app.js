@@ -1,0 +1,15 @@
+// VANTA.NET({
+//   el: "#your-element-selector",
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.0,
+//   minWidth: 200.0,
+//   scale: 1.0,
+//   scaleMobile: 1.0,
+//   color: 0xfbad4,
+//   backgroundColor: 0x34a82,
+//   points: 13.0,
+//   maxDistance: 23.0,
+//   spacing: 20.0,
+// });

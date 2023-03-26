@@ -5,11 +5,16 @@ import logo from "../../image/logo.png";
 import burgerMenu from "../../image/menu.png";
 import BurgerMenu from "./BurgerMenu";
 import "./headerAdaptive.css";
+import "../HomePage/app";
 const Header = () => {
   const Navigate = useNavigate();
   const [menuState, setMenuState] = useState(false);
   return (
-    <div className="container" onClick={() => setMenuState(false)}>
+    <div
+      className="container intro"
+      id="intro"
+      onClick={() => setMenuState(false)}
+    >
       <div className="navbar">
         <img
           onClick={() => Navigate("/")}
@@ -43,25 +48,31 @@ const Header = () => {
           <button className="auth__button" onClick={() => Navigate("/meeting")}>
             make meeting
           </button>
-        </div>
-        <div className="burger_menu">
-          <div className="burger_menu_img">
-            <img
-              onClick={(e) => {
-                setMenuState(true);
-                e.stopPropagation();
-              }}
-              src={burgerMenu}
-              alt=""
-              width="100%"
-            />
-          </div>
-          {menuState && (
-            <div className="sidebarMenu">
-              <BurgerMenu setMenuState={setMenuState} />
+          <div class="dropdown">
+            <button class="dropbtn">Eng</button>
+            <div class="dropdown-content">
+              <a href="#">Rus</a>
             </div>
-          )}
+          </div>
         </div>
+      </div>
+      <div className="burger_menu">
+        <div className="burger_menu_img">
+          <img
+            onClick={(e) => {
+              setMenuState(true);
+              e.stopPropagation();
+            }}
+            src={burgerMenu}
+            alt=""
+            width="100%"
+          />
+        </div>
+        {menuState && (
+          <div className="sidebarMenu">
+            <BurgerMenu setMenuState={setMenuState} />
+          </div>
+        )}
       </div>
 
       {/* <!-- navbar end --> */}

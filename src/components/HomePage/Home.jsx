@@ -67,9 +67,9 @@ const Home = () => {
 
           <li className="services__item" data-aos="fade-up">
             {/* <img className="services__icon" src={opyt} alt="" /> */}
-            <h3 className="services_desc">Up to $ 3900</h3>
-            <p>Building a website using</p>
-            <p>Order now and get free high-speed hosting</p>
+            <h3 className="services_desc">up to $ 900/m</h3>
+            <p>SEO site optimization using AI</p>
+            <p>Order now and get one month free</p>
             <button
               onClick={() => navigate("/meeting")}
               className="header__btn1"
@@ -79,8 +79,7 @@ const Home = () => {
             </button>
           </li>
 
-          <li className="services__item" data-aos="fade-up">
-            {/* <img className="services__icon" src={opyt} alt="" /> */}
+          {/* <li className="services__item" data-aos="fade-up">
             <h3 className="services_desc">Up to $ 3900</h3>
             <p>Building a website using</p>
             <p>Order now and get free high-speed hosting</p>
@@ -91,7 +90,7 @@ const Home = () => {
             >
               book meeting
             </button>
-          </li>
+          </li> */}
         </ul>
       </div>
 
