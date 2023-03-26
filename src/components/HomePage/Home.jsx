@@ -9,6 +9,7 @@ import Slider from "./Slider";
 import { prodArr, prodArr2 } from "../../consts";
 import "../Header/headerAdaptive.css";
 import { useNavigate } from "react-router-dom";
+import aboutUsImg from "../../image/aboutAs.jpg";
 const Home = () => {
   const [cardState, setCardState] = useState(false);
   const navigate = useNavigate();

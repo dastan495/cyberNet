@@ -1,8 +1,11 @@
 .main_duble {
   display: flex;
   justify-content: space-between;
-  color: blue;
   /* align-items: center; */
+  color: blue;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   /* flex-wrap: wrap; */
 }
 .main_duble img {
