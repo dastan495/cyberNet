@@ -3,7 +3,7 @@ import "../Header/header.css";
 import banner from "../../image/banner.jpg";
 import "../Footer/footer.css";
 import "./home.css";
-import art from "../../image/AI.jpg";
+import art from "../../image/art.jpg";
 import about from "../../image/about.jpg";
 import Slider from "./Slider";
 import { prodArr, prodArr2 } from "../../consts";
@@ -107,7 +107,11 @@ const Home = () => {
                 </div>
                 <div
                     className="infos"
-                    style={{ backgroundImage: `url(${aboutUsImg})` }}
+                    style={{
+                        backgroundImage: `url(${aboutUsImg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                    }}
                 >
                     <h3>
                         Artificial intelligence (AI) can have a significant
@@ -193,7 +197,11 @@ const Home = () => {
                 </div>
                 <div
                     className="infos2"
-                    style={{ backgroundImage: `url(${aboutUsImg})` }}
+                    style={{
+                        backgroundImage: `url(${aboutUsImg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                    }}
                 >
                     <h1>About Us </h1>
                     <h3>

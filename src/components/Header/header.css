@@ -264,7 +264,11 @@ header {
     /* height: 100%; */
     padding: 3%;
 }
-
+.infos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .sidebar {
     width: 400px;
     background-color: rgb(3, 3, 37, 0.96);
