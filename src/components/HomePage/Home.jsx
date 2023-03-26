@@ -101,13 +101,20 @@ const Home = () => {
             </div>
 
             {/*  */}
-            <div className="main_duble">
-                <div>
+            <div className="main_duble ">
+                <div className="about_block_img">
                     <img src={art} alt="" />
                 </div>
                 <div
-                    className="infos"
-                    style={{ backgroundImage: `url(${aboutUsImg})` }}
+                    className="infos infos2"
+                    style={{
+                        backgroundImage: `url(${aboutUsImg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                    }}
                 >
                     <h3>
                         Artificial intelligence (AI) can have a significant
@@ -193,7 +200,11 @@ const Home = () => {
                 </div>
                 <div
                     className="infos2"
-                    style={{ backgroundImage: `url(${aboutUsImg})` }}
+                    style={{
+                        backgroundImage: `url(${aboutUsImg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                    }}
                 >
                     <h1>About Us </h1>
                     <h3>

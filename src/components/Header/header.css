@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(3, 3, 37);
+    /* background-color: rgb(3, 3, 37); */
+    background-color: white;
     color: white;
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
@@ -28,6 +29,7 @@ body {
     align-items: center;
     position: relative;
     margin-top: 20px;
+    /* position: fixed; */
 }
 .navbar__logo {
     width: 12%;
@@ -44,7 +46,7 @@ body {
 }
 .list__item > a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: calc(var(--textsadap) * 1);
 }
 
@@ -112,6 +114,7 @@ header {
 .header__title_left {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
+    color: blue;
 
     font-size: 55px;
     /* margin-top: 5%; */
@@ -121,7 +124,7 @@ header {
 .header__desc_left {
     color: grey;
     font-size: 22px;
-    width: 50%;
+    width: 74%;
     line-height: 1.5;
 }
 .header__btn {
@@ -177,13 +180,24 @@ header {
     align-items: center;
     /* flex-wrap: wrap; */
     margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
 }
 /* ! [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[*/
 .services {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.services_desc {
+    color: blue;
+}
 .services__list {
+    color: blue;
     align-items: center;
     text-align: center;
     margin-bottom: 0;
@@ -203,9 +217,11 @@ header {
     text-align: center;
     font-size: 45px;
     margin-bottom: 10%;
+    color: blue;
 }
 .services__item {
     margin-bottom: 7%;
+    color: blue;
     max-width: 360px;
     display: inline;
     margin-left: 20px;
@@ -227,6 +243,7 @@ header {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    color: blue;
     justify-content: space-evenly;
 }
 .services__title_main {
@@ -247,7 +264,6 @@ header {
     width: 100%;
 }
 .services__item h3 {
-    color: white;
     font-size: 50px;
 }
 .services__item p {
@@ -256,6 +272,7 @@ header {
     align-items: center;
 }
 .infos2 > h3 {
+    color: white;
     line-height: 2;
     font-size: 24px;
     width: 90%;
@@ -263,6 +280,7 @@ header {
 .infos2 {
     /* height: 100%; */
     padding: 3%;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -293,7 +311,7 @@ header {
     /* width: 40px; */
     position: absolute;
     right: -80px;
-    top: -20px;
+    top: -40px;
 }
 .burger_menu_img {
     width: 40px;
