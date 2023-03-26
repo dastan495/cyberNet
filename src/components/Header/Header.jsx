@@ -45,7 +45,9 @@ const Header = () => {
             make meeting
           </button>
           <div class="dropdown">
-            <button class="dropbtn">Eng</button>
+            <a style={{}} class="dropbtn">
+              Eng
+            </a>
             <div class="dropdown-content">
               <a href="#">Rus</a>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../Header/header.css";
 import banner from "../../image/banner.jpg";
 
@@ -7,41 +7,73 @@ import "./home.css";
 import art from "../../image/AI.jpg";
 import about from "../../image/about.jpg";
 import Slider from "./Slider";
+import Header from "../Header/Header";
 import { prodArr, prodArr2 } from "../../consts";
 import "../Header/headerAdaptive.css";
 import { useNavigate } from "react-router-dom";
 import aboutUsImg from "../../image/aboutAs.jpg";
-const Home = () => {
+import NET from "vanta/dist/vanta.net.min";
+const Home = (props) => {
   const [cardState, setCardState] = useState(false);
   const navigate = useNavigate();
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const myRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        NET({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 300.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x3fe8ff,
+          backgroundColor: 0xf2a52,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
 
   return (
     <div className="container">
-      {/* <header> */}
-      <div className="header_main_block">
-        <div className="header_block_left" data-aos="fade-right">
-          <h2 className="header__title_left">
-            Family owners business <br /> of programmers
-          </h2>
-          <p className="header__desc_left">
-            We do not just make websites, we make selling websites using AI. Own
-            methodology for creating and promoting sites using AI Experience in
-            programming 30+ Results Guarantee
-          </p>
-          <button className="header__btn" onClick={() => navigate("/meeting")}>
-            make meeting
-            {/* <img
+      <div className="my_vanta" ref={myRef}>
+        <Header />
+        <div className="header_main_block">
+          <div className="header_block_left" data-aos="fade-right">
+            <h2 className="header__title_left">
+              Family owners business <br /> of programmers
+            </h2>
+            <p className="header__desc_left">
+              We do not just make websites, we make selling websites using AI.
+              Own methodology for creating and promoting sites using AI
+              Experience in programming 30+ Results Guarantee
+            </p>
+            <button
+              className="header__btn"
+              onClick={() => navigate("/meeting")}
+            >
+              make meeting
+              {/* <img
                             className="btn__icon"
                             src={banner}
                             alt="arrow-right"
                         /> */}
-          </button>
-        </div>
-        <div className="header__block_right">
-          <img className="header__img" src={banner} alt="" />
+            </button>
+          </div>
+          <div className="header__block_right">
+            <img className="header__img" src={banner} alt="" />
+          </div>
         </div>
       </div>
+
       {/* </header> */}
+
       <div className="services" id="best_offers">
         <h1 className="services__title_main" data-aos="fade-up">
           The use of AI is essential for businesses to remain competitive in the
