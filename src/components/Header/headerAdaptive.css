@@ -49,7 +49,7 @@
         margin-top: 20px;
     }
     .main_duble {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .infos > h3 {
@@ -77,6 +77,17 @@
     }
     .services {
         padding-bottom: 0px;
+    }
+    .about_block_img {
+        width: 100%;
+    }
+    .about_block_img > img {
+        width: 100% !important;
+        margin-top: 0px;
+    }
+    .infos2 {
+        /* height: 100%; */
+        padding: 10% 3%;
     }
 }
 @media (max-width: 620px) {
