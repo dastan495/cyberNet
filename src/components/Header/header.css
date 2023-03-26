@@ -16,7 +16,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* margin: auto; */
-    padding: 2% 0;
+    /* padding: 2% 0; */
 }
 /* navbar styles start */
 
@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: 20px;
+    padding: 30px 0px;
     /* position: fixed; */
 }
 .navbar__logo {
@@ -46,7 +46,7 @@ body {
 }
 .list__item > a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: calc(var(--textsadap) * 1);
 }
 
@@ -114,7 +114,7 @@ header {
 .header__title_left {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    color: blue;
+    color: white;
 
     font-size: 55px;
     /* margin-top: 5%; */
@@ -173,7 +173,7 @@ header {
 } */
 
 .header_main_block {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-around;

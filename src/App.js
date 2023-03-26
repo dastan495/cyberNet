@@ -6,7 +6,7 @@ import MainRoutes from "./Route/MainRoutes";
 function App() {
     return (
         <div style={{ position: "relative" }}>
-            <Header />
+            {/* <Header /> */}
             <MainRoutes />
             <Footer />
         </div>
