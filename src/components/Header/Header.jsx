@@ -10,11 +10,7 @@ const Header = () => {
   const Navigate = useNavigate();
   const [menuState, setMenuState] = useState(false);
   return (
-    <div
-      className="container intro"
-      id="intro"
-      onClick={() => setMenuState(false)}
-    >
+    <div className="container " id="intro" onClick={() => setMenuState(false)}>
       <div className="navbar">
         <img
           onClick={() => Navigate("/")}

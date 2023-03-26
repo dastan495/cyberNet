@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Header/header.css";
 import banner from "../../image/banner.jpg";
+
 import "../Footer/footer.css";
 import "./home.css";
 import art from "../../image/AI.jpg";
@@ -19,9 +20,9 @@ const Home = () => {
       {/* <header> */}
       <div className="header_main_block">
         <div className="header_block_left" data-aos="fade-right">
-          <h1 className="header__title_left">
+          <h2 className="header__title_left">
             Family owners business <br /> of programmers
-          </h1>
+          </h2>
           <p className="header__desc_left">
             We do not just make websites, we make selling websites using AI. Own
             methodology for creating and promoting sites using AI Experience in
@@ -41,7 +42,6 @@ const Home = () => {
         </div>
       </div>
       {/* </header> */}
-
       <div className="services" id="best_offers">
         <h1 className="services__title_main" data-aos="fade-up">
           The use of AI is essential for businesses to remain competitive in the
@@ -67,19 +67,6 @@ const Home = () => {
 
           <li className="services__item" data-aos="fade-up">
             {/* <img className="services__icon" src={opyt} alt="" /> */}
-            <h3 className="services_desc">up to $ 900/m</h3>
-            <p>SEO site optimization using AI</p>
-            <p>Order now and get one month free</p>
-            <button
-              onClick={() => navigate("/meeting")}
-              className="header__btn1"
-              type=""
-            >
-              book meeting
-            </button>
-          </li>
-
-          {/* <li className="services__item" data-aos="fade-up">
             <h3 className="services_desc">Up to $ 3900</h3>
             <p>Building a website using</p>
             <p>Order now and get free high-speed hosting</p>
@@ -90,16 +77,40 @@ const Home = () => {
             >
               book meeting
             </button>
-          </li> */}
+          </li>
+
+          <li className="services__item" data-aos="fade-up">
+            {/* <img className="services__icon" src={opyt} alt="" /> */}
+            <h3 className="services_desc">Up to $ 3900</h3>
+            <p>Building a website using</p>
+            <p>Order now and get free high-speed hosting</p>
+            <button
+              onClick={() => navigate("/meeting")}
+              className="header__btn1"
+              type=""
+            >
+              book meeting
+            </button>
+          </li>
         </ul>
       </div>
 
       {/*  */}
-      <div className="main_duble">
-        <div>
+      <div className="main_duble ">
+        <div className="about_block_img">
           <img src={art} alt="" />
         </div>
-        <div className="infos">
+        <div
+          className="infos infos2"
+          style={{
+            backgroundImage: `url(${aboutUsImg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
           <h3>
             Artificial intelligence (AI) can have a significant impact on
             business promotion.
@@ -173,7 +184,17 @@ const Home = () => {
       {/*  */}
 
       <div style={{ marginTop: "10%" }} id="about_us" className="main_duble">
-        <div style={{ color: "blue" }} className="infos2">
+        <div className="about_block_img">
+          <img src={about} alt="" />
+        </div>
+        <div
+          className="infos2"
+          style={{
+            backgroundImage: `url(${aboutUsImg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "100%",
+          }}
+        >
           <h1>About Us </h1>
           <h3>
             <br />
@@ -183,13 +204,10 @@ const Home = () => {
             world, so we are actively using AI technology in business.
           </h3>
         </div>
-        <div>
-          <img src={about} alt="" />
-        </div>
       </div>
       {/*  */}
       {/*  */}
-      <div style={{}} className="photo_block">
+      <div className="photo_block">
         <h2
           style={{
             fontSize: "35px",
