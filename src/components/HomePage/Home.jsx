@@ -19,9 +19,9 @@ const Home = () => {
             {/* <header> */}
             <div className="header_main_block">
                 <div className="header_block_left" data-aos="fade-right">
-                    <h2 className="header__title_left">
+                    <h1 className="header__title_left">
                         Family owners business <br /> of programmers
-                    </h2>
+                    </h1>
                     <p className="header__desc_left">
                         We do not just make websites, we make selling websites
                         using AI. Own methodology for creating and promoting
@@ -105,14 +105,7 @@ const Home = () => {
                 <div>
                     <img src={art} alt="" />
                 </div>
-                <div
-                    className="infos"
-                    style={{
-                        backgroundImage: `url(${aboutUsImg})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "100%",
-                    }}
-                >
+                <div className="infos">
                     <h3>
                         Artificial intelligence (AI) can have a significant
                         impact on business promotion.
@@ -192,17 +185,7 @@ const Home = () => {
                 id="about_us"
                 className="main_duble"
             >
-                <div className="about_block_img">
-                    <img src={about} alt="" />
-                </div>
-                <div
-                    className="infos2"
-                    style={{
-                        backgroundImage: `url(${aboutUsImg})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "100%",
-                    }}
-                >
+                <div style={{ color: "blue" }} className="infos2">
                     <h1>About Us </h1>
                     <h3>
                         <br />
@@ -213,10 +196,13 @@ const Home = () => {
                         actively using AI technology in business.
                     </h3>
                 </div>
+                <div>
+                    <img src={about} alt="" />
+                </div>
             </div>
             {/*  */}
             {/*  */}
-            <div className="photo_block">
+            <div style={{}} className="photo_block">
                 <h2
                     style={{
                         fontSize: "35px",
