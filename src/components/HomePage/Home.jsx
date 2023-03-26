@@ -1,12 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../Header/header.css";
 import banner from "../../image/banner.jpg";
+
 import "../Footer/footer.css";
 import "./home.css";
 import art from "../../image/art.jpg";
 import art2 from "../../image/AI.jpg";
+import art from "../../image/art.jpg";
+import art2 from "../../image/AI.jpg";
 import about from "../../image/about.jpg";
 import Slider from "./Slider";
+import Header from "../Header/Header";
 import Header from "../Header/Header";
 import { prodArr, prodArr2 } from "../../consts";
 import "../Header/headerAdaptive.css";
