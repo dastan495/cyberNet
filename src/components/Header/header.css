@@ -21,11 +21,11 @@ body {
 
 .navbar {
     /* position: fixed; */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-top: 20px;
 }
 .navbar__logo {
     width: 12%;
@@ -47,7 +47,7 @@ body {
 }
 
 .list__item > a:hover {
-    color: orange;
+    color: blue;
     transition: 0.8s;
 }
 .navbar__input {
@@ -208,14 +208,7 @@ header {
     margin-right: 20px;
     width: 100%;
 }
-.services__item h3 {
-    color: orange;
-    font-size: 24px;
-}
-.services {
-    padding-top: 120px;
-    /* padding-bottom: 120px; */
-}
+
 .services__list {
     align-items: center;
     text-align: center;
@@ -251,7 +244,12 @@ header {
 }
 .services__item h3 {
     color: white;
-    font-size: 24px;
+    font-size: 50px;
+}
+.services__item p {
+    font-size: 30px;
+    width: 100%;
+    align-items: center;
 }
 .infos2 > h3 {
     line-height: 2;
@@ -275,6 +273,8 @@ header {
     position: absolute;
     left: 80px;
     top: 120px;
+}
+.sidebar li > a {
     font-size: 34px;
 }
 .sidebar li {

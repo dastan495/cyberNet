@@ -7,26 +7,52 @@
   padding-top: 10%;
   /* align-items: center; */
 }
-.main_meeting1 input {
+.main_meeting1 input,.met1 textarea  {
   width: 200%;
   border-radius: 20px;
   border: none;
   height: 50px;
+  font-size: 20px;
+  padding: 15px ;
+  margin-top: 16px;
+
 }
 .main_meeting1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .main_meeting p {
   font-size: 25px;
   width: 100%;
 }
 .met1 {
-  padding-top: 10%;
+  padding: 10% 0;
   flex-wrap: wrap;
 }
-.met1 input {
+.met1 textarea {
   width: 300%;
   height: 150px;
+}
+.btn_block{
+  display: grid;
+  place-items: center;
+}
+.next_btn{
+  padding: 0 74px 0 60px;
+    font-family: Jura-700;
+    font-size: 26px;
+    line-height: 26px;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(88.32deg,#0679c1 1.42%,#02d6dd 109.3%);
+    border-radius: 100px;
+    height: 56px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.hidden_block{
+  display: none;
 }

@@ -8,8 +8,11 @@ import about from "../../image/about.jpg";
 import Slider from "./Slider";
 import { prodArr, prodArr2 } from "../../consts";
 import "../Header/headerAdaptive.css";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
     const [cardState, setCardState] = useState(false);
+    const navigate = useNavigate();
+
     return (
         <div className="container">
             {/* <header> */}
@@ -24,7 +27,10 @@ const Home = () => {
                         sites using AI Experience in programming 30+ Results
                         Guarantee
                     </p>
-                    <button className="header__btn">
+                    <button
+                        className="header__btn"
+                        onClick={() => navigate("/meeting")}
+                    >
                         make meeting
                         {/* <img
                             className="btn__icon"
@@ -39,7 +45,7 @@ const Home = () => {
             </div>
             {/* </header> */}
 
-            <div className="services">
+            <div className="services" id="best_offers">
                 <h1 className="services__title_main" data-aos="fade-up">
                     The use of AI is essential for businesses to remain
                     competitive in the marketplace and meet customer needs and
@@ -49,107 +55,44 @@ const Home = () => {
                     style={{ textAlign: "center", alignItems: "center" }}
                     className="services__list"
                 >
-                    <li
-                        style={{}}
-                        className="services__item"
-                        data-aos="fade-up"
-                    >
+                    <li className="services__item" data-aos="fade-up">
                         {/* <img className="services__icon" src={opyt} alt="" /> */}
-                        <h3
-                            style={{ fontSize: "50px" }}
-                            className="services_desc"
+                        <h3 className="services_desc">Up to $ 3900</h3>
+                        <p>Building a website using</p>
+                        <p>Order now and get free high-speed hosting</p>
+                        <button
+                            className="header__btn1"
+                            onClick={() => navigate("/meeting")}
+                            type=""
                         >
-                            Up to $ 3900
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "30px",
-                                width: "100%",
-                                alignItems: "center",
-                            }}
-                        >
-                            Building a website using
-                        </p>
-                        <p
-                            style={{
-                                fontSize: "30px",
-                                width: "100%",
-                                alignItems: "center",
-                            }}
-                        >
-                            Order now and get free high-speed hosting
-                        </p>
-                        <button className="header__btn1" type="">
                             book meeting
                         </button>
                     </li>
 
-                    <li
-                        style={{}}
-                        className="services__item"
-                        data-aos="fade-up"
-                    >
+                    <li className="services__item" data-aos="fade-up">
                         {/* <img className="services__icon" src={opyt} alt="" /> */}
-                        <h3
-                            style={{ fontSize: "50px" }}
-                            className="services_desc"
+                        <h3 className="services_desc">Up to $ 3900</h3>
+                        <p>Building a website using</p>
+                        <p>Order now and get free high-speed hosting</p>
+                        <button
+                            onClick={() => navigate("/meeting")}
+                            className="header__btn1"
+                            type=""
                         >
-                            Up to $ 3900
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "30px",
-                                width: "100%",
-                                alignItems: "center",
-                            }}
-                        >
-                            Building a website using
-                        </p>
-                        <p
-                            style={{
-                                fontSize: "30px",
-                                width: "100%",
-                                alignItems: "center",
-                            }}
-                        >
-                            Order now and get free high-speed hosting
-                        </p>
-                        <button className="header__btn1" type="">
                             book meeting
                         </button>
                     </li>
 
-                    <li
-                        style={{}}
-                        className="services__item"
-                        data-aos="fade-up"
-                    >
+                    <li className="services__item" data-aos="fade-up">
                         {/* <img className="services__icon" src={opyt} alt="" /> */}
-                        <h3
-                            style={{ fontSize: "50px" }}
-                            className="services_desc"
+                        <h3 className="services_desc">Up to $ 3900</h3>
+                        <p>Building a website using</p>
+                        <p>Order now and get free high-speed hosting</p>
+                        <button
+                            onClick={() => navigate("/meeting")}
+                            className="header__btn1"
+                            type=""
                         >
-                            Up to $ 3900
-                        </h3>
-                        <p
-                            style={{
-                                fontSize: "30px",
-                                width: "100%",
-                                alignItems: "center",
-                            }}
-                        >
-                            Building a website using
-                        </p>
-                        <p
-                            style={{
-                                fontSize: "30px",
-                                width: "100%",
-                                alignItems: "center",
-                            }}
-                        >
-                            Order now and get free high-speed hosting
-                        </p>
-                        <button className="header__btn1" type="">
                             book meeting
                         </button>
                     </li>
@@ -189,7 +132,7 @@ const Home = () => {
                 </div>
             </div>
             {/*  */}
-            <div className="white__zone">
+            <div className="white__zone" id="our_services">
                 <h1 className="ours">Our services</h1>
                 <div className="wrap__white">
                     <div className="cols__wprap">
@@ -236,7 +179,11 @@ const Home = () => {
             </div>
             {/*  */}
 
-            <div style={{ marginTop: "10%" }} className="main_duble">
+            <div
+                style={{ marginTop: "10%" }}
+                id="about_us"
+                className="main_duble"
+            >
                 <div className="infos2">
                     <h1>About Us </h1>
                     <h3>
@@ -269,7 +216,7 @@ const Home = () => {
                 </h2>
                 <Slider />
             </div>
-            <div className="studentCase_block">
+            <div className="studentCase_block" id="portfolio">
                 <h1>case students</h1>
                 <div className="studentCase_block_list">
                     {prodArr?.map((item) => (
