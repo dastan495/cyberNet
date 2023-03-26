@@ -9,6 +9,7 @@ import Slider from "./Slider";
 import { prodArr, prodArr2 } from "../../consts";
 import "../Header/headerAdaptive.css";
 import { useNavigate } from "react-router-dom";
+import aboutUsImg from "../../image/aboutAs.jpg";
 const Home = () => {
     const [cardState, setCardState] = useState(false);
     const navigate = useNavigate();
@@ -104,7 +105,10 @@ const Home = () => {
                 <div>
                     <img src={art} alt="" />
                 </div>
-                <div className="infos">
+                <div
+                    className="infos"
+                    style={{ backgroundImage: `url(${aboutUsImg})` }}
+                >
                     <h3>
                         Artificial intelligence (AI) can have a significant
                         impact on business promotion.
@@ -184,7 +188,13 @@ const Home = () => {
                 id="about_us"
                 className="main_duble"
             >
-                <div className="infos2">
+                <div className="about_block_img">
+                    <img src={about} alt="" />
+                </div>
+                <div
+                    className="infos2"
+                    style={{ backgroundImage: `url(${aboutUsImg})` }}
+                >
                     <h1>About Us </h1>
                     <h3>
                         <br />
@@ -194,9 +204,6 @@ const Home = () => {
                         of particular importance in the modern world, so we are
                         actively using AI technology in business.
                     </h3>
-                </div>
-                <div>
-                    <img src={about} alt="" />
                 </div>
             </div>
             {/*  */}
