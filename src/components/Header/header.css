@@ -17,11 +17,6 @@ body {
     margin-right: auto;
     /* margin: auto; */
     padding: 2% 0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin: auto; */
-    padding: 2% 0;
 }
 /* navbar styles start */
 
@@ -35,13 +30,6 @@ body {
     position: relative;
     margin-top: 20px;
     /* position: fixed; */
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-top: 20px;
 }
 .navbar__logo {
     width: 12%;
@@ -284,7 +272,7 @@ header {
     align-items: center;
 }
 .infos2 > h3 {
-    color: blue;
+    color: white;
     line-height: 2;
     font-size: 24px;
     width: 90%;
@@ -292,6 +280,7 @@ header {
 .infos2 {
     /* height: 100%; */
     padding: 3%;
+    overflow-y: auto;
 }
 
 .sidebar {
@@ -322,7 +311,7 @@ header {
     /* width: 40px; */
     position: absolute;
     right: -80px;
-    top: -20px;
+    top: -40px;
 }
 .burger_menu_img {
     width: 40px;

@@ -3,7 +3,7 @@ import "../Header/header.css";
 import banner from "../../image/banner.jpg";
 import "../Footer/footer.css";
 import "./home.css";
-import art from "../../image/art.jpg";
+import art from "../../image/AI.jpg";
 import about from "../../image/about.jpg";
 import Slider from "./Slider";
 import { prodArr, prodArr2 } from "../../consts";
@@ -19,9 +19,9 @@ const Home = () => {
             {/* <header> */}
             <div className="header_main_block">
                 <div className="header_block_left" data-aos="fade-right">
-                    <h1 className="header__title_left">
+                    <h2 className="header__title_left">
                         Family owners business <br /> of programmers
-                    </h1>
+                    </h2>
                     <p className="header__desc_left">
                         We do not just make websites, we make selling websites
                         using AI. Own methodology for creating and promoting
@@ -101,11 +101,21 @@ const Home = () => {
             </div>
 
             {/*  */}
-            <div className="main_duble">
-                <div>
+            <div className="main_duble ">
+                <div className="about_block_img">
                     <img src={art} alt="" />
                 </div>
-                <div className="infos">
+                <div
+                    className="infos infos2"
+                    style={{
+                        backgroundImage: `url(${aboutUsImg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                    }}
+                >
                     <h3>
                         Artificial intelligence (AI) can have a significant
                         impact on business promotion.
@@ -185,7 +195,17 @@ const Home = () => {
                 id="about_us"
                 className="main_duble"
             >
-                <div style={{ color: "blue" }} className="infos2">
+                <div className="about_block_img">
+                    <img src={about} alt="" />
+                </div>
+                <div
+                    className="infos2"
+                    style={{
+                        backgroundImage: `url(${aboutUsImg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                    }}
+                >
                     <h1>About Us </h1>
                     <h3>
                         <br />
@@ -196,13 +216,10 @@ const Home = () => {
                         actively using AI technology in business.
                     </h3>
                 </div>
-                <div>
-                    <img src={about} alt="" />
-                </div>
             </div>
             {/*  */}
             {/*  */}
-            <div style={{}} className="photo_block">
+            <div className="photo_block">
                 <h2
                     style={{
                         fontSize: "35px",
