@@ -4,7 +4,8 @@ import banner from "../../image/banner.jpg";
 
 import "../Footer/footer.css";
 import "./home.css";
-import art from "../../image/AI.jpg";
+import art from "../../image/art.jpg";
+import art2 from "../../image/AI.jpg";
 import about from "../../image/about.jpg";
 import Slider from "./Slider";
 import Header from "../Header/Header";
@@ -13,9 +14,12 @@ import "../Header/headerAdaptive.css";
 import { useNavigate } from "react-router-dom";
 import aboutUsImg from "../../image/aboutAs.jpg";
 import NET from "vanta/dist/vanta.net.min";
+import BurgerMenu from "../Header/BurgerMenu";
 const Home = (props) => {
   const [cardState, setCardState] = useState(false);
   const navigate = useNavigate();
+  const [menuState, setMenuState] = useState(false);
+
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
   useEffect(() => {
@@ -42,8 +46,13 @@ const Home = (props) => {
 
   return (
     <div className="container">
-      <div className="my_vanta" ref={myRef}>
-        <Header />
+      {menuState && (
+        <div className="sidebarMenu">
+          <BurgerMenu setMenuState={setMenuState} />
+        </div>
+      )}
+      <div className="my_vanta" style={{ zIndex: "1" }} ref={myRef}>
+        <Header setMenuState={setMenuState} />
         <div className="header_main_block">
           <div className="header_block_left" data-aos="fade-right">
             <h2 className="header__title_left">
@@ -130,14 +139,15 @@ const Home = (props) => {
       {/*  */}
       <div className="main_duble ">
         <div className="about_block_img">
-          <img src={art} alt="" />
+          <img className="img1" src={art} alt="" />
+          <img className="img2" src={art2} alt="" />
         </div>
         <div
           className="infos infos2"
           style={{
             backgroundImage: `url(${aboutUsImg})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
+            // backgroundSize: "100%",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -224,7 +234,6 @@ const Home = (props) => {
           style={{
             backgroundImage: `url(${aboutUsImg})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
           }}
         >
           <h1>About Us </h1>

@@ -187,6 +187,7 @@ header {
   align-items: center;
   /* flex-wrap: wrap; */
   margin-top: 20px;
+  z-index: 10;
 }
 /* ! [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[*/
 .services {
@@ -312,7 +313,8 @@ header {
   /* width: 40px; */
   position: absolute;
   right: -80px;
-  top: -40px;
+  top: 0px;
+  z-index: 30;
 }
 .burger_menu_img {
   width: 40px;
