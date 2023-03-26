@@ -46,6 +46,10 @@ const Header = ({ setMenuState }) => {
                     >
                         make meeting
                     </button>
+                    <select className="select_leng">
+                        <option value="">ENG</option>
+                        <option value="">RUS</option>
+                    </select>
                 </div>
                 <div className="burger_menu">
                     <div className="burger_menu_img">
