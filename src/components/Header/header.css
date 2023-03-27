@@ -25,7 +25,7 @@ body {
     position: relative;
 }
 .navbar__logo {
-    width: 12%;
+    width: 165px;
     cursor: pointer;
 }
 .navbar__list {
@@ -237,11 +237,24 @@ header {
 .infos2 > h3 {
     color: white;
     line-height: 2;
-    font-size: 18px;
+    /* font-size: 18px; */
     width: 80%;
+}
+.infos2 > h1 {
+    position: absolute;
+    top: 40px;
+    font-size: calc(var(--textadap) * 3.5);
+    /* font-size: 60px; */
+    left: 40px;
 }
 .infos2 {
     padding: 50px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     /* height: 500px; */
 }
 

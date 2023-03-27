@@ -218,7 +218,7 @@ const Home = (props) => {
             <div
                 style={{ marginTop: "10%" }}
                 id="about_us"
-                className="main_duble"
+                className="main_duble double2"
             >
                 <div className="about_block_img">
                     <img src={about} alt="" />

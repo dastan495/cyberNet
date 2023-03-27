@@ -25,7 +25,7 @@
 }
 
 .infos {
-    padding: 50px 30px;
+    padding: 100px 30px;
     /* height: 500px; */
 }
 /*  */
@@ -70,6 +70,11 @@
 .studentCase_block > h1 {
     font-size: 42px;
     margin-bottom: 40px;
+    background: linear-gradient(88.32deg, #0679c1 1.42%, #02d6dd 109.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 .studentCase_block_list {
     display: flex;
@@ -106,4 +111,7 @@
 }
 .about_block_img {
     height: 100%;
+}
+.double2 {
+    height: 500px;
 }

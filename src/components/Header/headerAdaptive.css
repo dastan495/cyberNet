@@ -20,7 +20,7 @@
         position: relative;
     }
     .my_vanta {
-        min-height: 150vh !important;
+        min-height: 170vh !important;
     }
 }
 @media (max-width: 1100px) {
@@ -74,6 +74,13 @@
     .services__title_main {
         width: 80%;
     }
+    .header__block_right img {
+        /* position: relative; */
+        width: 500px;
+    }
+    .wrap__white {
+        margin-bottom: 300px;
+    }
 }
 @media (max-width: 950px) {
     .navbar__list {
@@ -87,15 +94,12 @@
         width: 20%;
     } */
     .header__block_right img {
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
         /* display: none !important; */
     }
-    .header__block_right img {
-        /* position: relative; */
-        width: 500px;
-    }
+
     .my_vanta {
-        min-height: 140vh !important;
+        min-height: 170vh !important;
     }
 }
 @media (min-width: 950px) {
@@ -113,7 +117,7 @@
     }
     .header__block_right {
         justify-content: center;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .services__item h3 {
         font-size: 40px;
@@ -139,15 +143,20 @@
     .services__item > button {
         font-size: 22px;
     }
+    .infos2 > h1 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
 
     /* .navbar__logo {
         width: 32%;
     } */
+    .header__block_right > img {
+        width: 80%;
+    }
 }
 @media (max-width: 550px) {
-    .header__block_right > img {
-        width: 90%;
-    }
     .services__title_main {
         /* width: 100%; */
         font-size: 19px;
@@ -161,10 +170,21 @@
     .header_block_left {
         height: 400px;
     }
+    .my_vanta {
+        min-height: 140vh !important;
+    }
     .main_duble h3 {
         font-size: 12px !important;
     }
     .big_h3 {
         font-size: 20px !important;
+    }
+    .wrap__white {
+        margin-bottom: 200px;
+    }
+}
+@media (max-width: 500px) {
+    .header__block_right > img {
+        width: 90%;
     }
 }
