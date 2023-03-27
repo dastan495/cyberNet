@@ -27,6 +27,7 @@
 .infos {
   padding: 100px 30px;
   /* height: 500px; */
+
 }
 /*  */
 .swiper {
@@ -75,6 +76,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
 }
 .studentCase_block_list {
   display: flex;
@@ -151,4 +153,7 @@
 }
 .p_scr {
   font-size: 13px;
+}
+.double2 {
+    height: 500px;
 }

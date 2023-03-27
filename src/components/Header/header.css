@@ -27,6 +27,7 @@ body {
 .navbar__logo {
   width: 165px;
   cursor: pointer;
+
 }
 .navbar__list {
   display: flex;
@@ -247,6 +248,14 @@ header {
   font-size: calc(var(--textadap) * 3.5);
   /* font-size: 60px; */
   left: 40px;
+
+}
+.infos2 > h1 {
+    position: absolute;
+    top: 40px;
+    font-size: calc(var(--textadap) * 3.5);
+    /* font-size: 60px; */
+    left: 40px;
 }
 .infos2 {
   padding: 50px 30px;
@@ -257,6 +266,7 @@ header {
   justify-content: center;
   position: relative;
   /* height: 500px; */
+
 }
 
 .sidebar {
