@@ -116,5 +116,5 @@
   font-size: calc(var(--textadap) * 1);
   border-bottom: #fff solid 0.4px;
   padding: 9px 0px;
-  list-style: none;
+  /* list-style: none; */
 }
