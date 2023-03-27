@@ -18,6 +18,7 @@ import UpNavbar from "../Header/UpNavbar/UpNavbar";
 import UsAi from "../../image/UsAI.png";
 import UsAi_img1 from "../../image/UsAi_img1.png";
 import UsAi_img2 from "../../image/UsAi_img2.png";
+import z from "../../image/z.png";
 const Home = (props) => {
     const [cardState, setCardState] = useState(false);
     const navigate = useNavigate();
@@ -216,7 +217,7 @@ const Home = (props) => {
             {/*  */}
 
             <div
-                style={{ marginTop: "10%" }}
+                style={{ marginTop: "10%", marginBottom: "15%" }}
                 id="about_us"
                 className="main_duble double2"
             >
@@ -242,6 +243,109 @@ const Home = (props) => {
                 </div>
             </div>
             {/*  */}
+            <div className="scrol_ots">
+                <h1>TESTIMONALS</h1>
+                <div className="scroll_box">
+                    <div className="scroll_migh">
+                        <p>
+                            My second time using them. They are quick to
+                            respond, very nice, and have reasonable prices. I
+                            will definitely be calling them in the future with
+                            any of my home hvac needs/repairs.
+                        </p>
+                        <h3>Jane Cooper</h3>
+                        <p className="p_scr">CEO Layerswift</p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img width={"35%"} src={z} alt="" />
+                            <h5>5.9</h5>
+                        </div>
+                    </div>
+                    <div className="scroll_migh">
+                        <p>
+                            My second time using them. They are quick to
+                            respond, very nice, and have reasonable prices. I
+                            will definitely be calling them in the future with
+                            any of my home hvac needs/repairs.
+                        </p>
+                        <h3>Jane Cooper</h3>
+                        <p className="p_scr">CEO Layerswift</p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img width={"35%"} src={z} alt="" />
+                            <h5>5.9</h5>
+                        </div>
+                    </div>
+                    <div className="scroll_migh">
+                        <p>
+                            My second time using them. They are quick to
+                            respond, very nice, and have reasonable prices. I
+                            will definitely be calling them in the future with
+                            any of my home hvac needs/repairs.
+                        </p>
+                        <h3>Jane Cooper</h3>
+                        <p className="p_scr">CEO Layerswift</p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img width={"35%"} src={z} alt="" />
+                            <h5>5.9</h5>
+                        </div>
+                    </div>
+                    <div className="scroll_migh">
+                        <p>
+                            My second time using them. They are quick to
+                            respond, very nice, and have reasonable prices. I
+                            will definitely be calling them in the future with
+                            any of my home hvac needs/repairs.
+                        </p>
+                        <h3>Jane Cooper</h3>
+                        <p className="p_scr">CEO Layerswift</p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img width={"35%"} src={z} alt="" />
+                            <h5>5.9</h5>
+                        </div>
+                    </div>
+                    <div className="scroll_migh">
+                        <p>
+                            My second time using them. They are quick to
+                            respond, very nice, and have reasonable prices. I
+                            will definitely be calling them in the future with
+                            any of my home hvac needs/repairs.
+                        </p>
+                        <h3>Jane Cooper</h3>
+                        <p className="p_scr">CEO Layerswift</p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img width={"35%"} src={z} alt="" />
+                            <h5>5.9</h5>
+                        </div>
+                    </div>
+                    <div className="scroll_migh">
+                        <p>
+                            My second time using them. They are quick to
+                            respond, very nice, and have reasonable prices. I
+                            will definitely be calling them in the future with
+                            any of my home hvac needs/repairs.
+                        </p>
+                        <h3>Jane Cooper</h3>
+                        <p className="p_scr">CEO Layerswift</p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img width={"35%"} src={z} alt="" />
+                            <h5>5.9</h5>
+                        </div>
+                    </div>
+                    <div className="scroll_migh">
+                        <p>
+                            My second time using them. They are quick to
+                            respond, very nice, and have reasonable prices. I
+                            will definitely be calling them in the future with
+                            any of my home hvac needs/repairs.
+                        </p>
+                        <h3>Jane Cooper</h3>
+                        <p className="p_scr">CEO Layerswift</p>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                            <img width={"35%"} src={z} alt="" />
+                            <h5>5.9</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {/*  */}
             <div className="photo_block">
                 <h2

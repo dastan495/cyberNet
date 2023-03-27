@@ -57,7 +57,7 @@ body {
 }
 
 /* navbar styles end */
-/* header styles start */
+/* _ styles start */
 
 .auth__button {
     width: 200px;
@@ -138,9 +138,9 @@ header {
 }
 
 .header__block_right img {
-    width: 700px;
+    width: 630px;
     position: absolute;
-    right: -150px;
+    right: -130px;
     top: 0px;
 }
 .header_block_left {

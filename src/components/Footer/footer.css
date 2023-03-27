@@ -37,7 +37,7 @@
 .flexbox {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 5%;
     row-gap: 15px;
