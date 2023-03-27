@@ -1,170 +1,190 @@
 @media (max-width: 1300px) {
-    .header__block_right img {
-        /* position: relative; */
-        width: 600px;
-    }
+  .header__block_right img {
+    /* position: relative; */
+    width: 600px;
+  }
 }
 @media (max-width: 1200px) {
-    .header__block_right img {
-        /* position: relative; */
-        right: -10px;
-    }
-    .header_main_block {
-        flex-direction: column;
-        align-items: start;
-    }
-    .header__block_right {
-        width: 100%;
-        display: flex;
-        align-items: end;
-        position: relative;
-    }
-    .my_vanta {
-        min-height: 150vh !important;
-    }
+  .header__block_right img {
+    /* position: relative; */
+    right: -10px;
+  }
+  .header_main_block {
+    flex-direction: column;
+    align-items: start;
+  }
+  .header__block_right {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    position: relative;
+  }
+  .my_vanta {
+    min-height: 170vh !important;
+  }
 }
 @media (max-width: 1100px) {
-    .header_block_left {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .header__block_right {
-        width: 100vw;
-        display: flex;
-        justify-content: end;
-        /* background-color: rgba(97, 107, 106, 0.7); */
-    }
+  .header_block_left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .header__block_right {
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    /* background-color: rgba(97, 107, 106, 0.7); */
+  }
 
-    .big_h3 {
-        width: 100% !important;
-    }
+  .big_h3 {
+    width: 100% !important;
+  }
 
-    .infos > h3 {
-        font-size: 12px;
-    }
-    .infos2 > h3 {
-        font-size: 18px !important;
-    }
-    .main_duble img {
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    .main_duble {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .infos > h3 {
-        font-size: 18px;
-    }
-    .infos2 > h3 {
-        font-size: 18px !important;
-    }
-    .about_block_img {
-        width: 100%;
-    }
-    .about_block_img > img {
-        width: 100% !important;
-        margin-top: 0px;
-    }
-    .infos2 {
-        /* height: 100%; */
-        padding: 10% 3%;
-    }
+  .infos > h3 {
+    font-size: 12px;
+  }
+  .infos2 > h3 {
+    font-size: 18px !important;
+  }
+  .main_duble img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .main_duble {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .infos > h3 {
+    font-size: 18px;
+  }
+  .infos2 > h3 {
+    font-size: 18px !important;
+  }
+  .about_block_img {
+    width: 100%;
+  }
+  .about_block_img > img {
+    width: 100% !important;
+    margin-top: 0px;
+  }
+  .infos2 {
+    /* height: 100%; */
+    padding: 10% 3%;
+  }
 
-    .services__title_main {
-        width: 80%;
-    }
+  .services__title_main {
+    width: 80%;
+  }
+  .header__block_right img {
+    /* position: relative; */
+    width: 500px;
+  }
+  .wrap__white {
+    margin-bottom: 300px;
+  }
 }
 @media (max-width: 950px) {
-    .navbar__list {
-        display: none;
-    }
-    .auth_button_div {
-        display: none;
-    }
+  .navbar__list {
+    display: none;
+  }
+  .auth_button_div {
+    display: none;
+  }
 
-    /* .navbar__logo {
+  /* .navbar__logo {
         width: 20%;
     } */
-    .header__block_right img {
-        margin-bottom: 30px;
-        /* display: none !important; */
-    }
-    .header__block_right img {
-        /* position: relative; */
-        width: 500px;
-    }
-    .my_vanta {
-        min-height: 140vh !important;
-    }
+  .header__block_right img {
+    /* margin-bottom: 30px; */
+    /* display: none !important; */
+  }
+
+  .my_vanta {
+    min-height: 170vh !important;
+  }
 }
 @media (min-width: 950px) {
-    .burger_menu {
-        display: none;
-    }
+  .burger_menu {
+    display: none;
+  }
 }
 @media (max-width: 760px) {
-    .header__title_left {
-        /* font-size: 36px; */
-        font-weight: 500;
-    }
-    .header__desc_left {
-        /* font-size: 14px; */
-    }
-    .header__block_right {
-        justify-content: center;
-        margin-top: 20px;
-    }
-    .services__item h3 {
-        font-size: 40px;
-    }
-    .services__item p {
-        font-size: 24px;
-    }
-    .services {
-        padding-bottom: 0px;
-    }
-    .infos2 {
-        /* padding: 0; */
-    }
+  .header__title_left {
+    /* font-size: 36px; */
+    font-weight: 500;
+  }
+  .header__desc_left {
+    /* font-size: 14px; */
+  }
+  .header__block_right {
+    justify-content: center;
+    /* margin-top: 20px; */
+  }
+  .services__item h3 {
+    font-size: 40px;
+  }
+  .services__item p {
+    font-size: 24px;
+  }
+  .services {
+    padding-bottom: 0px;
+  }
+  .infos2 {
+    /* padding: 0; */
+  }
 }
 @media (max-width: 620px) {
-    .header__desc_left {
-        width: 90%;
-    }
-    .services__item {
-        width: 90%;
-        height: 450px;
-    }
-    .services__item > button {
-        font-size: 22px;
-    }
+  .header__desc_left {
+    width: 90%;
+  }
+  .services__item {
+    width: 90%;
+    height: 450px;
+  }
+  .services__item > button {
+    font-size: 22px;
+  }
+  .infos2 > h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
 
-    /* .navbar__logo {
+  /* .navbar__logo {
         width: 32%;
     } */
+  .header__block_right > img {
+    width: 80%;
+  }
 }
 @media (max-width: 550px) {
-    .header__block_right > img {
-        width: 90%;
-    }
-    .services__title_main {
-        /* width: 100%; */
-        font-size: 19px;
-    }
-    .header__title_left {
-        font-size: 36px;
-    }
-    .header__desc_left {
-        font-size: 18px;
-    }
-    .header_block_left {
-        height: 400px;
-    }
-    .main_duble h3 {
-        font-size: 12px !important;
-    }
-    .big_h3 {
-        font-size: 20px !important;
-    }
+  .services__title_main {
+    /* width: 100%; */
+    font-size: 19px;
+  }
+  .header__title_left {
+    font-size: 36px;
+  }
+  .header__desc_left {
+    font-size: 18px;
+  }
+  .header_block_left {
+    height: 400px;
+  }
+  .my_vanta {
+    min-height: 140vh !important;
+  }
+  .main_duble h3 {
+    font-size: 12px !important;
+  }
+  .big_h3 {
+    font-size: 20px !important;
+  }
+  .wrap__white {
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .header__block_right > img {
+    width: 90%;
+  }
 }
