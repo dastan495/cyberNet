@@ -17,11 +17,13 @@ body {
 }
 
 .navbar {
-    width: 90%;
+    width: 85%;
+    max-width: 1700px;
+    height: 54px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     position: relative;
 }
 .navbar__logo {
@@ -31,14 +33,18 @@ body {
 .navbar__list {
     display: flex;
     list-style-type: none;
-    width: 45%;
+    /* width: 45%; */
     justify-content: space-between;
     margin: 0;
-    align-items: center;
+    align-items: end;
     font-size: 18px;
+}
+.list__item {
+    margin-left: 50px;
 }
 .list__item > a {
     text-decoration: none;
+    margin-left: 5px;
     color: white;
     font-size: calc(var(--textsadap) * 1);
 }
@@ -89,10 +95,8 @@ body {
 }
 /*  */
 .header__title_left {
-    font-family: "Open Sans", sans-serif;
     font-weight: 500;
     color: white;
-
     font-size: 55px;
     margin-bottom: 10px;
     line-height: 1;
@@ -151,7 +155,8 @@ header {
     z-index: 3;
 }
 .header_main_block {
-    width: 90%;
+    width: 85%;
+    max-width: 1700px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -214,7 +219,7 @@ header {
     background-color: transparent;
     border: none;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: bolder;
     width: 50%;
     background: linear-gradient(88.32deg, #0679c1 1.42%, #02d6dd 109.3%);
     -webkit-background-clip: text;
@@ -229,7 +234,7 @@ header {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 50px;
 }
 
@@ -238,13 +243,13 @@ header {
     color: white;
     line-height: 2;
     /* font-size: 18px; */
-    width: 80%;
+    width: 65%;
 }
 .infos2 > h1 {
     position: absolute;
     top: 40px;
-    font-size: calc(var(--textadap) * 3.5);
-    /* font-size: 60px; */
+    /* font-size: calc(var(--textadap) * 3.5); */
+    font-size: 60px;
     left: 40px;
 }
 .infos2 {
@@ -253,7 +258,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     position: relative;
     /* height: 500px; */
 }

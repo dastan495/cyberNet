@@ -39,7 +39,7 @@ const Home = (props) => {
                     scale: 1.0,
                     scaleMobile: 1.0,
                     color: 0x3fe8ff,
-                    backgroundColor: 0xf2a52,
+                    backgroundColor: "#183E66",
                 })
             );
         }
@@ -89,7 +89,7 @@ const Home = (props) => {
 
             {/* </header> */}
 
-            <div className="services" id="best_offers">
+            <div style={{ zIndex: "2" }} className="services" id="best_offers">
                 <img className="UsAI" src={UsAi} alt="" />
                 <h1 className="services__title_main" data-aos="fade-up">
                     The use of AI is essential for businesses to remain
@@ -129,7 +129,7 @@ const Home = (props) => {
 
             {/*  */}
             <div className="main_duble ">
-                <div className="about_block_img">
+                <div className="about_block_img2">
                     <img className="img1" src={art} alt="" />
                 </div>
                 <div
@@ -137,6 +137,7 @@ const Home = (props) => {
                     style={{
                         backgroundImage: `url(${aboutUsImg})`,
                         backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
@@ -217,9 +218,9 @@ const Home = (props) => {
             {/*  */}
 
             <div
-                style={{ marginTop: "10%", marginBottom: "15%" }}
+                style={{ marginTop: "50px", marginBottom: "50px" }}
                 id="about_us"
-                className="main_duble double2"
+                className="main_duble2 double2"
             >
                 <div className="about_block_img">
                     <img src={about} alt="" />
@@ -229,6 +230,7 @@ const Home = (props) => {
                     style={{
                         backgroundImage: `url(${aboutUsImg})`,
                         backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
                     }}
                 >
                     <h1>About Us </h1>

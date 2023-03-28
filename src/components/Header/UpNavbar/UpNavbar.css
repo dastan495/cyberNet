@@ -1,6 +1,7 @@
 .up_navbar {
-    width: 90%;
+    width: 85%;
     height: 70px;
+    max-width: 1700px;
     margin: auto;
     display: flex;
     align-items: center;

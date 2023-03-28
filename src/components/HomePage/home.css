@@ -11,17 +11,39 @@
     object-fit: cover;
     object-position: 0 5;
 }
-
-.big_h3 {
-    font-size: 24px !important;
-    width: 75%;
-    margin: auto;
-}
 .main_duble h3 {
     width: 95%;
     font-size: 18px;
     line-height: 2;
     /* margin-left: 30px; */
+}
+.main_duble2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+.main_duble2 img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 5;
+}
+.main_duble2 h3 {
+    width: 95%;
+    font-size: 18px;
+    line-height: 2;
+    /* margin-left: 30px; */
+}
+.big_h3 {
+    font-size: 24px !important;
+    width: 75%;
+    margin: auto;
+}
+
+.hh {
+    display: none;
 }
 
 .infos {
@@ -106,7 +128,9 @@
 .my_vanta {
     /* position: absolute; */
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 700px;
+    /* max-height: 720px; */
     /* top: 0px; */
 }
 .about_block_img {
