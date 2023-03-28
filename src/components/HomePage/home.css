@@ -27,6 +27,7 @@
 .infos {
   padding: 100px 30px;
   /* height: 500px; */
+
 }
 /*  */
 .swiper {
@@ -59,6 +60,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 .seemore_btn {
   width: 300px;
@@ -118,4 +120,7 @@
 }
 .p_scr {
   font-size: 13px;
+}
+.double2 {
+    height: 500px;
 }
