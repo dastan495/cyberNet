@@ -84,6 +84,7 @@
   }
 
 }
+
 @media (max-width: 950px) {
   .navbar__list {
     display: none;
@@ -190,6 +191,9 @@
 @media (max-width: 500px) {
   .header__block_right > img {
     width: 90%;
+  }
+  .case_block_card {
+    margin-bottom: 17px;
   }
 
 }
