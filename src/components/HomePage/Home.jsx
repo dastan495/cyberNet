@@ -19,6 +19,7 @@ import UsAi from "../../image/UsAI.png";
 import UsAi_img1 from "../../image/UsAi_img1.png";
 import UsAi_img2 from "../../image/UsAi_img2.png";
 import z from "../../image/z.png";
+import "./homeCard.css";
 const Home = (props) => {
   const [cardState, setCardState] = useState(false);
   const navigate = useNavigate();
@@ -350,40 +351,59 @@ const Home = (props) => {
         </h2>
         <Slider />
       </div>
-      <div className="studentCase_block" id="portfolio">
-        <h1>case students</h1>
-        <div className="studentCase_block_list">
-          {prodArr?.map((item) => (
-            <div className="case_block_card" key={item.id}>
-              <div className="card_img">
-                <img src={item.img} alt="" />
-              </div>
-              <h2>{item.title}</h2>
-              <h4>{item.desc}</h4>
-              <p>{item.year}</p>
-            </div>
-          ))}
-        </div>
-        {cardState && (
+      <div className="case">
+        <div className="studentCase_block" id="portfolio">
+          <h1
+            className="blo-h1"
+            style={{
+              fontSize: "50px",
+              lineHeight: "70px",
+              textTransform: "uppercase",
+            }}
+          >
+            case students
+          </h1>
           <div className="studentCase_block_list">
-            {prodArr2?.map((item) => (
+            {prodArr?.map((item) => (
               <div className="case_block_card" key={item.id}>
                 <div className="card_img">
                   <img src={item.img} alt="" />
                 </div>
-                <h2>{item.title}</h2>
-                <h4>{item.desc}</h4>
-                <p>{item.year}</p>
+                <div className="case-items-block-info">
+                  <a className="a-title" href="/">
+                    {item.title}
+                  </a>
+                  <div className="info_title_mini">{item.desc}</div>
+                  <div className="case__item-_block_date">{item.year}</div>
+                </div>
               </div>
             ))}
           </div>
-        )}
-        <button
-          className="seemore_btn"
-          onClick={() => setCardState(!cardState)}
-        >
-          {cardState ? "close" : "see more"}
-        </button>
+          {cardState && (
+            <div className="studentCase_block_list">
+              {prodArr2?.map((item) => (
+                <div className="case_block_card" key={item.id}>
+                  <div className="card_img">
+                    <img src={item.img} alt="" />
+                  </div>
+                  <div className="case-items-block-info">
+                    <a className="a-title" href="/">
+                      {item.title}
+                    </a>
+                    <div className="info_title_mini">{item.desc}</div>
+                    <div className="case__item-_block_date">{item.year}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+          <button
+            className="seemore_btn"
+            onClick={() => setCardState(!cardState)}
+          >
+            {cardState ? "close" : "see more"}
+          </button>
+        </div>
       </div>
       {/*  */}
     </div>
