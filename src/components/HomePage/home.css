@@ -1,3 +1,6 @@
+/* .adap {
+    display: none;
+} */
 .main_duble {
     display: flex;
     justify-content: space-between;
@@ -50,6 +53,9 @@
     padding: 100px 30px;
     /* height: 500px; */
 }
+.adap2 {
+    display: none;
+}
 /*  */
 .swiper {
     margin-top: 5%;
@@ -82,39 +88,6 @@
     object-fit: cover;
 }
 
-.studentCase_block {
-    color: blue;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 70px;
-}
-.studentCase_block > h1 {
-    font-size: 42px;
-    margin-bottom: 40px;
-    background: linear-gradient(88.32deg, #0679c1 1.42%, #02d6dd 109.3%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-.studentCase_block_list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.case_block_card {
-    width: 320px;
-    padding: 5px;
-    margin-bottom: 50px;
-}
-.card_img {
-    width: 100%;
-}
-.card_img > img {
-    width: 100%;
-}
 .seemore_btn {
     width: 300px;
     margin: auto;

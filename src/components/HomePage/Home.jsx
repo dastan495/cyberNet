@@ -4,6 +4,7 @@ import banner from "../../image/banner.jpg";
 import "../Footer/footer.css";
 import "./home.css";
 import art from "../../image/art.jpg";
+import artAdap from "../../image/AI_adap.jpg";
 import art2 from "../../image/AI.jpg";
 import about from "../../image/about.jpg";
 import Slider from "./Slider";
@@ -19,6 +20,7 @@ import UsAi from "../../image/UsAI.png";
 import UsAi_img1 from "../../image/UsAi_img1.png";
 import UsAi_img2 from "../../image/UsAi_img2.png";
 import z from "../../image/z.png";
+import "./homeCard.css";
 const Home = (props) => {
     const [cardState, setCardState] = useState(false);
     const navigate = useNavigate();
@@ -168,6 +170,42 @@ const Home = (props) => {
                     </h2>
                     <br />
                 </div>
+                <div
+                    className="infos adap"
+                    style={{
+                        backgroundImage: `url(${artAdap})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                    }}
+                >
+                    <h3>
+                        Artificial intelligence (AI) can have a significant
+                        impact on business promotion.
+                    </h3>
+                    <br />
+                    <h3>
+                        AI can quickly analyze large amounts of data and
+                        identify trends and patterns that can help determine
+                        which products or services are most in demand by
+                        customers. This can help a business customize their
+                        marketing and sales strategy.
+                    </h3>
+                    <br />
+                    <h3>
+                        AI can help businesses automate routine tasks, which can
+                        save time and resources.
+                    </h3>
+                    <br />
+                    <h2 className="big_h3">
+                        Overall, AI can help businesses streamline their
+                        operations, improve efficiency, and improve product and
+                        customer experience.
+                    </h2>
+                    <br />
+                </div>
             </div>
             {/*  */}
             <div className="white__zone" id="our_services">
@@ -229,6 +267,24 @@ const Home = (props) => {
                     className="infos2"
                     style={{
                         backgroundImage: `url(${aboutUsImg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "100%",
+                    }}
+                >
+                    <h1>About Us </h1>
+                    <h3>
+                        <br />
+                        About us how good we are, we are engineers and
+                        programmers of the 4th generation. We have developed our
+                        own methods for creating and promoting websites. AI is
+                        of particular importance in the modern world, so we are
+                        actively using AI technology in business.
+                    </h3>
+                </div>
+                <div
+                    className="infos2 adap2"
+                    style={{
+                        backgroundImage: `url(${artAdap})`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "100%",
                     }}
@@ -364,40 +420,67 @@ const Home = (props) => {
                 </h2>
                 <Slider />
             </div>
-            <div className="studentCase_block" id="portfolio">
-                <h1>case students</h1>
-                <div className="studentCase_block_list">
-                    {prodArr?.map((item) => (
-                        <div className="case_block_card" key={item.id}>
-                            <div className="card_img">
-                                <img src={item.img} alt="" />
-                            </div>
-                            <h2>{item.title}</h2>
-                            <h4>{item.desc}</h4>
-                            <p>{item.year}</p>
-                        </div>
-                    ))}
-                </div>
-                {cardState && (
+            <div className="case">
+                <div className="studentCase_block" id="portfolio">
+                    <h1
+                        className="blo-h1"
+                        style={{
+                            fontSize: "50px",
+                            lineHeight: "70px",
+                            textTransform: "uppercase",
+                        }}
+                    >
+                        case students
+                    </h1>
                     <div className="studentCase_block_list">
-                        {prodArr2?.map((item) => (
+                        {prodArr?.map((item) => (
                             <div className="case_block_card" key={item.id}>
                                 <div className="card_img">
                                     <img src={item.img} alt="" />
                                 </div>
-                                <h2>{item.title}</h2>
-                                <h4>{item.desc}</h4>
-                                <p>{item.year}</p>
+                                <div className="case-items-block-info">
+                                    <a className="a-title" href="/">
+                                        {item.title}
+                                    </a>
+                                    <div className="info_title_mini">
+                                        {item.desc}
+                                    </div>
+                                    <div className="case__item-_block_date">
+                                        {item.year}
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
-                )}
-                <button
-                    className="seemore_btn"
-                    onClick={() => setCardState(!cardState)}
-                >
-                    {cardState ? "close" : "see more"}
-                </button>
+                    {cardState && (
+                        <div className="studentCase_block_list">
+                            {prodArr2?.map((item) => (
+                                <div className="case_block_card" key={item.id}>
+                                    <div className="card_img">
+                                        <img src={item.img} alt="" />
+                                    </div>
+                                    <div className="case-items-block-info">
+                                        <a className="a-title" href="/">
+                                            {item.title}
+                                        </a>
+                                        <div className="info_title_mini">
+                                            {item.desc}
+                                        </div>
+                                        <div className="case__item-_block_date">
+                                            {item.year}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                    <button
+                        className="seemore_btn"
+                        onClick={() => setCardState(!cardState)}
+                    >
+                        {cardState ? "close" : "see more"}
+                    </button>
+                </div>
             </div>
             {/*  */}
         </div>

@@ -1,7 +1,19 @@
+@media (max-width: 1400px) {
+    .navbar__logo {
+        width: 135px;
+    }
+    .list__item {
+        margin-left: 30px;
+    }
+}
 @media (max-width: 1300px) {
     .header__block_right img {
         /* position: relative; */
         width: 600px;
+    }
+    .auth__button {
+        width: 150px;
+        height: 34px;
     }
 }
 @media (max-width: 1200px) {
@@ -22,6 +34,17 @@
     }
     .my_vanta {
         min-height: 170vh !important;
+    }
+    .list__item {
+        margin-left: 15px;
+        margin-bottom: 3px;
+    }
+    .auth__button {
+        width: 140px;
+        height: 32px;
+    }
+    .select_leng {
+        margin-left: 5px;
     }
 }
 @media (max-width: 1100px) {
@@ -81,12 +104,13 @@
         /* position: relative; */
         width: 500px;
         right: -10px;
-        top: -30px;
+        top: -0px;
     }
     .wrap__white {
         margin-bottom: 300px;
     }
 }
+
 @media (max-width: 950px) {
     .navbar__list {
         display: none;
@@ -94,7 +118,12 @@
     .auth_button_div {
         display: none;
     }
-
+    .nv2 {
+        display: block;
+    }
+    .navbar__logo {
+        display: none;
+    }
     /* .navbar__logo {
         width: 20%;
     } */
@@ -103,7 +132,9 @@
         /* display: none !important; */
         top: 20px;
     }
-
+    .infos {
+        padding: 30px !important;
+    }
     .my_vanta {
         min-height: 170vh !important;
     }
@@ -134,8 +165,38 @@
     .services {
         padding-bottom: 0px;
     }
+    .infos2 > h1 {
+        font-size: 40px;
+    }
+    .main_duble2 h3 {
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+    .white__zone {
+        margin-bottom: 300px;
+    }
     .infos2 {
-        /* padding: 0; */
+        display: none;
+    }
+    .adap2 {
+        display: block !important;
+    }
+    .infos {
+        display: none !important;
+    }
+
+    .adap {
+        display: block !important;
+        margin-top: 50px;
+    }
+    .main_duble img {
+        width: 100% !important;
+        margin-top: -20px;
+    }
+}
+@media (min-width: 760px) {
+    .adap {
+        display: none !important;
     }
 }
 @media (max-width: 620px) {
@@ -177,7 +238,7 @@
         height: 400px;
     }
     .my_vanta {
-        min-height: 140vh !important;
+        min-height: 105vh !important;
     }
     .main_duble h3 {
         font-size: 12px !important;
@@ -263,5 +324,27 @@
     .services_desc {
         font-size: 60px;
         font-weight: 900;
+    }
+}
+@media (min-width: 2000px) {
+    .main_duble h3 {
+        font-size: 40px !important;
+    }
+
+    .big_h3 {
+        font-size: 55px !important;
+        display: none;
+    }
+    .main_duble img {
+        width: 700px !important;
+    }
+    .cols__wprap {
+        width: 500px;
+    }
+    .infos2 > h1 {
+        font-size: 100px;
+    }
+    .main_duble2 h3 {
+        font-size: 44px !important;
     }
 }
