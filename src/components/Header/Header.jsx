@@ -13,11 +13,20 @@ const Header = ({ setMenuState }) => {
             <div className="navbar">
                 <img
                     onClick={() => Navigate("/")}
-                    className="navbar__logo"
+                    className="nv2"
                     src={logo}
                     alt="navbar logo"
                 />
                 <ul className="navbar__list">
+                    <li>
+                        <img
+                            onClick={() => Navigate("/")}
+                            className="navbar__logo"
+                            src={logo}
+                            alt="navbar logo"
+                        />
+                    </li>
+
                     <li className="list__item">
                         <a href="#about_us">about us</a>
                     </li>
