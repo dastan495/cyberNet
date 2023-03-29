@@ -258,6 +258,9 @@
   .wrap__white {
     margin-bottom: 200px;
   }
+  .slider_img > img {
+    width: 350px !important;
+  }
 }
 @media (max-width: 500px) {
   .header__block_right > img {
@@ -349,19 +352,11 @@
     font-size: 60px;
     font-weight: 900;
   }
-}
-@media (max-width: 900px) {
-  .ser-h3 {
-    font-size: 30px !important;
-  }
-  .ser_spisok a {
-    font-size: 16px !important;
-  }
-  .ser_spisok a::before {
-    top: 7px !important;
+  .scroll_box {
+    height: 350px !important;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 2100px) {
   .main_duble h3 {
     font-size: 40px !important;
   }
@@ -380,9 +375,6 @@
     font-size: 100px;
   }
   .main_duble2 h3 {
-    font-size: 44px !important;
-  }
-  .ser-h3 {
-    font-size: 30px !important;
+    font-size: 36px !important;
   }
 }
