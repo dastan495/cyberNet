@@ -3,6 +3,9 @@ import "./meeting.css";
 import axios from "axios";
 import Header from "../Header/Header";
 import { useNavigate } from "react-router-dom";
+import number from "../../image/number2.png";
+import emailImg from "../../image/email2.png";
+import MeetHeader from "../Header/MeetHeader";
 const Meeting = () => {
     const [visible, setVisible] = useState(false);
     const [name, setName] = useState("");
@@ -42,9 +45,29 @@ const Meeting = () => {
     };
     return (
         <div>
-            <Header />
+            <div className="up_navbar">
+                <div className="upNav_email">
+                    <img src={emailImg} alt="" />
+                    <a style={{ color: "black" }} href="#">
+                        example@example.com
+                    </a>
+                </div>
+                <div className="upNav_number">
+                    <img src={number} alt="" />
+                    <a style={{ color: "black" }} href="">
+                        +1 (514) 312-5678
+                    </a>
+                </div>
+            </div>
+            <MeetHeader />
             <div
-                style={{ color: "black", padding: "20px 20px" }}
+                style={{
+                    color: "black",
+                    width: "85%",
+                    margin: "auto",
+                    marginTop: "30px",
+                    marginBottom: "20px",
+                }}
                 className={visible === false ? "container" : "hidden_block"}
             >
                 <h1>Book meeting</h1>
