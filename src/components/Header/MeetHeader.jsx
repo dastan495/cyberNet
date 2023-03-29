@@ -5,9 +5,9 @@ import logo from "../../image/logo2.png";
 import burgerMenu from "../../image/bar.png";
 // import BurgerMenu from "./BurgerMenu";
 import "./headerAdaptive.css";
-const MeetHeader = ({ setMenuState }) => {
+const MeetHeader = () => {
     const Navigate = useNavigate();
-    // const [menuState, setMenuState] = useState(false);
+    const [menuState, setMenuState] = useState(false);
     return (
         <div className="container">
             <div className="navbar">

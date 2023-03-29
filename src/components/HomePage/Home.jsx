@@ -51,9 +51,12 @@ const Home = (props) => {
     }, [vantaEffect]);
 
     return (
-        <div className="container">
+        <div className="container" onClick={() => setMenuState(false)}>
             {menuState && (
-                <div className="sidebarMenu">
+                <div
+                    className="sidebarMenu"
+                    onClick={(e) => e.stopPropagation()}
+                >
                     <BurgerMenu setMenuState={setMenuState} />
                 </div>
             )}
@@ -583,21 +586,23 @@ const Home = (props) => {
                             ))}
                         </div>
                     )}
-                    <div
-                        className="div"
-                        style={{
-                            width: "100%",
-                            display: "flex",
-                            justifyContent: "center",
-                        }}
-                    >
-                        <button
-                            className="seemore_btn"
-                            onClick={() => setCardState(!cardState)}
+                    {!cardState && (
+                        <div
+                            className="div"
+                            style={{
+                                width: "100%",
+                                display: "flex",
+                                justifyContent: "center",
+                            }}
                         >
-                            {cardState ? "close" : "see more"}
-                        </button>
-                    </div>
+                            <button
+                                className="seemore_btn"
+                                onClick={() => setCardState(!cardState)}
+                            >
+                                {cardState ? "close" : "see more"}
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
             {/*  */}
