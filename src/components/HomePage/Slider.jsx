@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "./Slider.css";
 import "swiper/css/pagination";
 
 import "./home.css";
@@ -19,6 +20,10 @@ export default function App() {
   return (
     <>
       <Swiper
+        style={{
+          transitionDuration: "0ms",
+          // transform: "translate3d(-1189px, 0px, 0px)",
+        }}
         slidesPerView={2}
         spaceBetween={30}
         centeredSlides={true}
@@ -33,19 +38,19 @@ export default function App() {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className="d-1">
           <img src={s1} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="d-1">
           <img src={s2} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="d-1">
           <img src={s3} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="d-1">
           <img src={s1} alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="d-1">
           <img src={s2} alt="" />
         </SwiperSlide>
         {/* <SwiperSlide>Slide 2</SwiperSlide>
