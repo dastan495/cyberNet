@@ -274,6 +274,7 @@
     display: block;
     margin-bottom: 20px;
   }
+
 }
 @media (max-width: 500px) {
   .header__block_right > img {
@@ -393,6 +394,7 @@
   .main_duble2 h3 {
     font-size: 36px !important;
   }
+
 }
 @media (max-width: 320px) {
   .ser_spisok a {

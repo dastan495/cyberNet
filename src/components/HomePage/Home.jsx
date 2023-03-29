@@ -438,6 +438,7 @@ const Home = (props) => {
             <div style={{ display: "flex", alignItems: "center" }}>
               <img width={"35%"} src={z} alt="" />
               <h5>5.9</h5>
+
             </div>
           </div>
           <div className="scroll_migh">
