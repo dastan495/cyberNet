@@ -7,6 +7,7 @@ import React, { useRef, useState } from "react";
 // import "./Slider.css";
 import "swiper/css/pagination";
 
+
 // import "./home.css";
 
 // // import required modules
@@ -41,4 +42,5 @@ export default function App() {
       </div>
     </>
   );
+
 }
