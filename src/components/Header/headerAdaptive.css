@@ -249,6 +249,9 @@
     .wrap__white {
         margin-bottom: 200px;
     }
+    .slider_img > img {
+        width: 350px !important;
+    }
 }
 @media (max-width: 500px) {
     .header__block_right > img {

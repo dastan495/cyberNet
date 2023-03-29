@@ -408,12 +408,12 @@ const Home = (props) => {
             <div className="photo_block">
                 <h2
                     style={{
+                        width: "85%",
                         fontSize: "35px",
                         color: "white",
                         marginLeft: "auto",
                         marginRight: "auto",
-                        textAlign: "center",
-                        alignItems: "center",
+                        marginBottom: "40px",
                     }}
                 >
                     COMMUNITY
