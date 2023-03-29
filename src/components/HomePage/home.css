@@ -192,6 +192,20 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+@media (max-width: 425px) {
+  .ser_spisok li {
+    line-height: 0.1;
+  }
+  .services {
+    margin-bottom: 100%;
+  }
+  .services__items {
+    display: block;
+  }
+  .services_items_block h3 {
+    width: 250%;
+  }
+}
 .services_items_block {
   width: 28%;
 }

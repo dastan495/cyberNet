@@ -172,11 +172,17 @@ header {
 }
 /* ! [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[*/
 .services {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 120px;
   position: relative;
   max-width: 1700px;
   margin: auto;
+}
+@media (max-width: 425px) {
+  .services {
+    padding-top: 1px;
+    padding-bottom: 10px;
+  }
 }
 
 .services__title_main {
