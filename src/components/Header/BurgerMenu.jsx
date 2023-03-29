@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import closeIcon from "../../image/close.png";
 const BurgerMenu = ({ setMenuState }) => {
+    const navigate = useNavigate();
     return (
         <div className="sidebar" style={{ zIndex: "20" }}>
             <img
@@ -10,6 +12,11 @@ const BurgerMenu = ({ setMenuState }) => {
                 width="50px"
             />
             <ul>
+                <button onClick={() => navigate("/meeting")}>meeting</button>
+                <select className="select_leng3">
+                    <option value="">ENG</option>
+                    <option value="">RUS</option>
+                </select>
                 <li className="list__item">
                     <a
                         onClick={() => setMenuState(false)}
