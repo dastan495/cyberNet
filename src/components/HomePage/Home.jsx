@@ -42,10 +42,11 @@ const Home = (props) => {
                     gyroControls: false,
                     minHeight: 300.0,
                     minWidth: 200.0,
-                    scale: 1.0,
+                    // zoom: 1.7,
+                    scale: 1,
                     scaleMobile: 1.0,
-                    color: 0x3fe8ff,
-                    backgroundColor: "#183E66",
+                    color: "#4AA2B8",
+                    backgroundColor: "#034A82",
                 })
             );
         }
@@ -217,7 +218,7 @@ const Home = (props) => {
                 </div>
             </div>
             {/*  */}
-            <section className="services">
+            <section className="services" id="our_services">
                 <div className="ser_con">
                     <div className="services__items">
                         <h4>Our services</h4>

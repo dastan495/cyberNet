@@ -52,11 +52,30 @@ body {
     margin-left: 5px;
     color: white;
     font-size: calc(var(--textsadap) * 1);
+    transition: 0.8s;
+    position: relative;
+}
+button {
+    cursor: pointer;
+}
+.list__item > a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
-.list__item > a:hover {
-    transition: 0.8s;
+.list__item > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
+
 .navbar__input {
     width: 15%;
     height: 25px;
@@ -291,7 +310,7 @@ header {
 }
 .sidebar > ul > button {
     height: 35px;
-    width: 100px;
+    width: 140px;
     border-radius: 20px;
     border: none;
     background-color: #02d6dd;
@@ -306,6 +325,9 @@ header {
     background: none;
     color: white;
     border: none;
+}
+.select_leng3 > option {
+    color: black;
 }
 .sidebar > ul {
     position: absolute;
