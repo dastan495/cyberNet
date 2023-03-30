@@ -72,6 +72,9 @@
     .ser_spisok a {
         font-size: 22px !important;
     }
+    .double2 {
+        height: 475px;
+    }
 }
 @media (max-width: 1100px) {
     .header_block_left {
@@ -110,9 +113,7 @@
     .infos > h3 {
         font-size: 18px;
     }
-    .infos2 > h3 {
-        font-size: 18px !important;
-    }
+
     .about_block_img {
         width: 100%;
     }
@@ -139,6 +140,15 @@
     }
     .ser_spisok a {
         font-size: 19px !important;
+    }
+    .services__items {
+        display: block !important;
+    }
+    .mySwiper {
+        display: none !important;
+    }
+    .tre {
+        display: block !important;
     }
 }
 
@@ -169,6 +179,12 @@
     }
     .my_vanta {
         /* min-height: 170vh !important; */
+    }
+    .tre {
+        display: none !important;
+    }
+    .dva {
+        display: block !important;
     }
 }
 @media (min-width: 950px) {
@@ -201,7 +217,7 @@
         font-size: 24px;
     }
     .services {
-        padding-bottom: 0px;
+        margin-bottom: 550px;
     }
     .infos2 > h1 {
         font-size: 40px;
@@ -304,6 +320,10 @@
         /* width: 90%; */
         left: 10%;
     }
+    .infos2 > h3 {
+        font-size: 16px !important;
+        width: 80% !important;
+    }
 }
 @media (max-width: 500px) {
     .header__block_right > img {
@@ -331,7 +351,13 @@
 }
 @media (max-width: 1000px) {
     .services {
-        margin-bottom: 10%;
+        margin-bottom: 450px;
+    }
+    .UsSer {
+        margin-bottom: 20px !important;
+    }
+    .services_items_block {
+        width: 40% !important;
     }
 }
 @media (min-width: 1600px) {

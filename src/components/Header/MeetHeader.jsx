@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "./header.css";
 import { Navigate, useNavigate } from "react-router-dom";
 import logo from "../../image/logo2.png";
-import burgerMenu from "../../image/bar.png";
+import burgerMenu from "../../image/bar2.png";
 // import BurgerMenu from "./BurgerMenu";
 import "./headerAdaptive.css";
-const MeetHeader = () => {
+const MeetHeader = ({ setMenuState }) => {
     const Navigate = useNavigate();
-    const [menuState, setMenuState] = useState(false);
+    function togle() {
+        setMenuState(true);
+    }
     return (
         <div className="container">
             <div className="navbar">
@@ -66,7 +68,7 @@ const MeetHeader = () => {
                     <div className="burger_menu_img">
                         <img
                             onClick={(e) => {
-                                setMenuState(true);
+                                togle();
                                 e.stopPropagation();
                             }}
                             src={burgerMenu}
