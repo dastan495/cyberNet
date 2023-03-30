@@ -39,9 +39,9 @@ const Header = ({ setMenuState }) => {
                     <li className="list__item">
                         <a href="#portfolio">portfolio</a>
                     </li>
-                    <li className="list__item">
+                    {/* <li className="list__item">
                         <a href="#blog">blog</a>
-                    </li>
+                    </li> */}
                 </ul>
                 {/* <input type="text" className="navbar__input" /> */}
 

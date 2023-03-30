@@ -12,7 +12,9 @@ const BurgerMenu = ({ setMenuState }) => {
                 width="50px"
             />
             <ul>
-                <button onClick={() => navigate("/meeting")}>meeting</button>
+                <button onClick={() => navigate("/meeting")}>
+                    make meeting
+                </button>
                 <select className="select_leng3">
                     <option value="">ENG</option>
                     <option value="">RUS</option>
@@ -53,7 +55,7 @@ const BurgerMenu = ({ setMenuState }) => {
                         portfolio
                     </a>{" "}
                 </li>
-                <li className="list__item">
+                {/* <li className="list__item">
                     <a
                         onClick={() => setMenuState(false)}
                         style={{ color: "white" }}
@@ -61,7 +63,7 @@ const BurgerMenu = ({ setMenuState }) => {
                     >
                         blog
                     </a>{" "}
-                </li>
+                </li> */}
             </ul>
         </div>
     );
