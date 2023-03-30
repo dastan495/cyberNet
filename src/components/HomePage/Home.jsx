@@ -55,9 +55,9 @@ const Home = (props) => {
   }, [vantaEffect]);
 
   return (
-    <div className="container">
+    <div className="container" onClick={() => setMenuState(false)}>
       {menuState && (
-        <div className="sidebarMenu">
+        <div className="sidebarMenu" onClick={(e) => e.stopPropagation()}>
           <BurgerMenu setMenuState={setMenuState} />
         </div>
       )}
@@ -92,7 +92,7 @@ const Home = (props) => {
         </div>
       </div>
       {/* </header> */}
-      <div style={{ zIndex: "2" }} className="services" id="best_offers">
+      <div style={{ zIndex: "2" }} className="services UsSer" id="best_offers">
         <img className="UsAI" src={UsAi} alt="" />
         <h1 className="services__title_main" data-aos="fade-up">
           The use of AI is essential for businesses to remain competitive in the

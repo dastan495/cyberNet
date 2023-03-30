@@ -55,7 +55,6 @@ body {
 }
 
 .list__item > a:hover {
-    color: blue;
     transition: 0.8s;
 }
 .navbar__input {
@@ -152,7 +151,7 @@ header {
     width: 630px;
     position: absolute;
     right: -130px;
-    top: 0px;
+    top: 10px;
 }
 .header_block_left {
     height: 500px;
@@ -279,15 +278,34 @@ header {
 }
 
 .sidebar {
-    width: 400px;
-    background-color: rgb(3, 3, 37, 0.96);
+    width: 500px;
+    background-color: #183e66;
     height: 120vh;
     position: relative;
 }
 .sidebar > img {
+    /* height: 48px; */
     position: absolute;
     left: 30px;
     top: 30px;
+}
+.sidebar > ul > button {
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: #02d6dd;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.select_leng3 {
+    font-size: 18px;
+    background: none;
+    color: white;
+    border: none;
 }
 .sidebar > ul {
     position: absolute;

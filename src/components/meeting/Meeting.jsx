@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import number from "../../image/number2.png";
 import emailImg from "../../image/email2.png";
 import MeetHeader from "../Header/MeetHeader";
+import BurgerMenu from "../Header/BurgerMenu";
 const Meeting = () => {
     const [visible, setVisible] = useState(false);
     const [name, setName] = useState("");
@@ -43,6 +44,8 @@ const Meeting = () => {
                 console.log(error);
             });
     };
+    const [menuState, setMenuState] = useState(false);
+
     return (
         <div>
             <div className="up_navbar">
@@ -59,7 +62,15 @@ const Meeting = () => {
                     </a>
                 </div>
             </div>
-            <MeetHeader />
+            {menuState && (
+                <div
+                    className="sidebarMenu"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <BurgerMenu setMenuState={setMenuState} />
+                </div>
+            )}
+            <MeetHeader setMenuState={setMenuState} />
             <div
                 style={{
                     color: "black",
@@ -160,7 +171,14 @@ const Meeting = () => {
                 </div>
             </div>
             <div
-                style={{ padding: "20px" }}
+                style={{
+                    padding: "20px",
+                    color: "black",
+                    width: "85%",
+                    margin: "auto",
+                    marginTop: "30px",
+                    marginBottom: "20px",
+                }}
                 className={visible ? "container" : "hidden_block"}
             >
                 <h1 style={{ color: "black" }}>Book meeting</h1>
