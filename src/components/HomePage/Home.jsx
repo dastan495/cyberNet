@@ -80,6 +80,7 @@ const Home = (props) => {
             >
               make meeting
               {/* <img
+
                             className="btn__icon"
                             src={banner}
                             alt="arrow-right"
@@ -112,6 +113,7 @@ const Home = (props) => {
               book meeting
             </button>
           </li>
+
 
           <li className="services__item" data-aos="fade-up">
             <img src={UsAi_img2} alt="" />
@@ -712,6 +714,77 @@ const Home = (props) => {
               <div className="case_block_card" key={item.id}>
                 <div className="card_img">
                   <img src={item.img} alt="" />
+            <div className="case">
+                <div className="studentCase_block" id="portfolio">
+                    <h1
+                        className="blo-h1"
+                        style={{
+                            fontSize: "50px",
+                            lineHeight: "70px",
+                            textTransform: "uppercase",
+                        }}
+                    >
+                        case students
+                    </h1>
+                    <div className="studentCase_block_list">
+                        {prodArr?.map((item) => (
+                            <div className="case_block_card" key={item.id}>
+                                <div className="card_img">
+                                    <img src={item.img} alt="" />
+                                </div>
+                                <div className="case-items-block-info">
+                                    <a className="a-title" href="/">
+                                        {item.title}
+                                    </a>
+                                    <div className="info_title_mini">
+                                        {item.desc}
+                                    </div>
+                                    <div className="case__item-_block_date">
+                                        {item.year}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    {cardState && (
+                        <div className="studentCase_block_list">
+                            {prodArr2?.map((item) => (
+                                <div className="case_block_card" key={item.id}>
+                                    <div className="card_img">
+                                        <img src={item.img} alt="" />
+                                    </div>
+                                    <div className="case-items-block-info">
+                                        <a className="a-title" href="/">
+                                            {item.title}
+                                        </a>
+                                        <div className="info_title_mini">
+                                            {item.desc}
+                                        </div>
+                                        <div className="case__item-_block_date">
+                                            {item.year}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                    {!cardState && (
+                        <div
+                            className="div"
+                            style={{
+                                width: "100%",
+                                display: "flex",
+                                justifyContent: "center",
+                            }}
+                        >
+                            <button
+                                className="seemore_btn"
+                                onClick={() => setCardState(!cardState)}
+                            >
+                                {cardState ? "close" : "see more"}
+                            </button>
+                        </div>
+                    )}
                 </div>
                 <div className="case-items-block-info">
                   <a className="a-title" href="/">

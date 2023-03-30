@@ -107,6 +107,7 @@
     width: 100% !important;
   }
 
+
   .infos > h3 {
     font-size: 12px;
   }
@@ -163,6 +164,7 @@
   .tre {
     display: block !important;
   }
+
 }
 
 @media (max-width: 950px) {
@@ -199,6 +201,7 @@
   .dva {
     display: block !important;
   }
+
 }
 @media (min-width: 950px) {
   .burger_menu {
@@ -251,6 +254,7 @@
   .infos {
     display: none !important;
   }
+
 
   .adap {
     display: block !important;
@@ -342,6 +346,7 @@
   .header__block_right > img {
     /* width: 90%; */
   }
+
 }
 @media (max-width: 800px) {
   .ser-h3 {
@@ -450,6 +455,7 @@
     /* height: 910px !important; */
   }
 
+
   .services__item {
     width: 600px;
     height: 600px;
@@ -489,6 +495,7 @@
     font-size: 80px;
   }
   /* .main_duble2 h3 {
+
         font-size: 36px !important;
     } */
 }
