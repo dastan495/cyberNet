@@ -74,7 +74,7 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: transparent;
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
@@ -87,7 +87,9 @@
     height: 100%;
     object-fit: cover;
 }
-
+.tre {
+    display: none;
+}
 .seemore_btn {
     align-items: center;
     text-align: center;
@@ -198,11 +200,9 @@
         line-height: 0.1;
     }
     .services {
-        margin-bottom: 100%;
+        margin-bottom: 500px;
     }
-    .services__items {
-        display: block;
-    }
+
     .services_items_block h3 {
         width: 250%;
     }

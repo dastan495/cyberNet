@@ -59,3 +59,24 @@
 .hidden_block {
     display: none;
 }
+@media (max-width: 1100px) {
+    .main_meeting1 {
+        flex-direction: column;
+    }
+    .main_meeting1 > div {
+        width: 100% !important;
+    }
+    .main_meeting {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .main_meeting1 input,
+    .met1 textarea {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .main_meeting p {
+        font-size: 20px;
+    }
+}
