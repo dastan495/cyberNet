@@ -28,7 +28,7 @@ const MeetHeader = ({ setMenuState }) => {
                             alt="navbar logo"
                         />
                     </li>
-
+                    {/* 
                     <li className="list__item2">
                         <a color="black" href="#about_us">
                             about us
@@ -45,7 +45,7 @@ const MeetHeader = ({ setMenuState }) => {
                     </li>
                     <li color="black" className="list__item2">
                         <a href="#blog">blog</a>
-                    </li>
+                    </li> */}
                 </ul>
                 {/* <input type="text" className="navbar__input" /> */}
 

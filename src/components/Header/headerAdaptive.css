@@ -7,9 +7,14 @@
     }
 }
 @media (max-width: 1440px) {
-    .main_image img {
+    .main_video_img {
         width: 100% !important;
     }
+    /* .main_videos {
+        width: 500px !important;
+        height: 480px !important;
+    } */
+
     .scrol_otss {
         display: none;
     }
@@ -88,6 +93,10 @@
     .double2 {
         height: 475px;
     }
+    /* .main_videos {
+        width: 450px !important;
+        height: 430px !important;
+    } */
 }
 @media (max-width: 1100px) {
     .header_block_left {
@@ -109,7 +118,10 @@
     .big_h3 {
         width: 100% !important;
     }
-
+    /* .main_videos {
+        width: 400px !important;
+        height: 380px !important;
+    } */
     .infos > h3 {
         font-size: 12px;
     }
@@ -208,6 +220,12 @@
         display: none;
     }
 }
+@media (max-width: 900px) {
+    /* .main_videos {
+        width: 350px !important;
+        height: 300px !important;
+    } */
+}
 @media (max-width: 768px) {
     .ser_spisok li {
         margin-bottom: 5px !important;
@@ -218,6 +236,10 @@
         /* font-size: 36px; */
         font-weight: 500;
     }
+    /* .main_videos {
+        width: 300px !important;
+        height: 250px !important;
+    } */
     .header__desc_left {
         /* font-size: 14px; */
     }
@@ -366,7 +388,7 @@
     }
 }
 @media (max-width: 1700px) {
-    .main_image img {
+    .main_video_img {
         width: 93% !important;
     }
     .asd {
@@ -376,13 +398,10 @@
         margin-top: 10px;
         font-weight: 700;
     }
-    .scrol_otss {
-        display: none;
-    }
 }
 
 @media (max-width: 1024px) {
-    .main_image img {
+    .main_video_img {
         width: 93% !important;
     }
     .scrol_otss {
@@ -400,6 +419,7 @@
         width: 45%;
         right: -160px;
     }
+
     .header__title_left {
         font-size: 56px;
     }
@@ -495,6 +515,12 @@
     .big_h3 {
         font-size: 55px !important;
         display: none;
+    }
+    .nones {
+        width: 75%;
+        margin: auto;
+        font-size: 36px;
+        display: block !important;
     }
     .main_duble img {
         width: 700px !important;

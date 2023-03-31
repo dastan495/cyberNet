@@ -152,9 +152,10 @@
     height: 250px;
     display: flex;
     justify-content: space-between;
-    overflow: scroll;
+    overflow: auto;
     border-bottom: 1px solid #0679c1;
     border-top: 1px solid #0679c1;
+    z-index: 5;
 }
 .scroll_box::-webkit-scrollbar {
     display: none;
@@ -216,7 +217,60 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-@media (max-width: 425px) {
+.scroll_migh img {
+    cursor: pointer;
+}
+.main_video_img {
+    cursor: pointer;
+}
+.play_video_img {
+    cursor: pointer;
+}
+.play_video_img2 {
+    cursor: pointer;
+}
+.ds {
+    cursor: pointer;
+}
+.main_image {
+    width: 50%;
+}
+.main_videos {
+    width: 100%;
+}
+.videos2 {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 4%;
+}
+
+.ratio-inner {
+    position: relative;
+    height: 0;
+    border: none;
+}
+
+.ratio-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.ratio-4-3 {
+    padding-top: 62.9%; /* Соотношение 4 к 3 */
+}
+.ratio-4-1 {
+    padding-top: 90%; /* Соотношение 4 к 3 */
+}
+.ratio-4-5 {
+    padding-top: 70%; /* Соотношение 4 к 3 */
+}
+.scrol_otss {
+    display: none;
+}
+@media (max-width: 625px) {
     .ser_spisok li {
         line-height: 0.1;
     }
@@ -294,21 +348,37 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.main_image img {
+.main_video_img {
     width: 95%;
     padding-top: 5%;
 }
-.a img {
-    width: 100%;
-    padding-top: 5%;
-    padding-left: 4%;
+.a {
+    width: 30%;
 }
 
 .asd {
     width: 30%;
 }
+.asd > img {
+    width: 100%;
+    padding-top: 5%;
+}
+
+.play_video_img {
+    position: absolute;
+    left: 42%;
+    top: 50%;
+}
+.play_video_img2 {
+    position: absolute;
+    left: 47%;
+    top: 45%;
+}
+
 .ds {
-    width: 50%;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 4%;
 }
 .main_video_box p {
     /* width: 400px; */
@@ -321,7 +391,10 @@
     font-weight: 700;
 }
 @media (max-width: 768px) {
-    .main_image img {
+    .main_video_img {
+        width: 99% !important;
+    }
+    .main_video_img {
         width: 99% !important;
     }
     .main_video_box h3 {
