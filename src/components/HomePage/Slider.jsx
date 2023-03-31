@@ -12,16 +12,16 @@ import "../Header/headerAdaptive.css";
 // // import required modules
 import { Autoplay, FreeMode, Pagination, Thumbs } from "swiper";
 
-import s1 from "../../image/s1.jpg";
-import s2 from "../../image/s16.jpg";
-import s3 from "../../image/s3.jpg";
-import s4 from "../../image/s4.jpg";
-import s5 from "../../image/s15.jpg";
-import s6 from "../../image/s6.jpg";
-import s7 from "../../image/s7.jpg";
-import s8 from "../../image/s8.jpg";
-import s9 from "../../image/s9.jpg";
-import s10 from "../../image/s10.jpg";
+import s1 from "../../image/s1.webp";
+import s2 from "../../image/s16.webp";
+import s3 from "../../image/s3.webp";
+import s4 from "../../image/s4.webp";
+import s5 from "../../image/s15.webp";
+import s6 from "../../image/s6.webp";
+import s7 from "../../image/s7.webp";
+import s8 from "../../image/s8.webp";
+import s9 from "../../image/s9.webp";
+import s10 from "../../image/s10.webp";
 
 export default function App() {
     return (
