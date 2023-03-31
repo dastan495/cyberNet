@@ -2,15 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import "../Header/header.css";
 import banner from "../../image/banner.jpg";
 import "../Footer/footer.css";
+import "../Header/headerAdaptive.css";
 import "./home.css";
 import art from "../../image/art.jpg";
 import artAdap from "../../image/AI_adap.jpg";
-import art2 from "../../image/AI.jpg";
-import about from "../../image/about.jpg";
+import about from "../../image/s13.jpg";
 import Slider from "./Slider";
 import Header from "../Header/Header";
 import { prodArr, prodArr2 } from "../../consts";
-import "../Header/headerAdaptive.css";
 import { useNavigate } from "react-router-dom";
 import aboutUsImg from "../../image/aboutAs.jpg";
 import NET from "vanta/dist/vanta.net.min";
@@ -23,13 +22,22 @@ import z from "../../image/z.png";
 import leftPhote from "../../image/negt.png";
 import rightPhoteTop from "../../image/girl.png";
 import rightPhoteBot from "../../image/ind.png";
-
+import play from "../../image/play.png";
 import "./homeCard.css";
 const Home = (props) => {
     const [cardState, setCardState] = useState(false);
     const navigate = useNavigate();
     const [menuState, setMenuState] = useState(false);
-
+    const [iframe, setIframe] = useState(true);
+    const [iframe2, setIframe2] = useState(true);
+    const [iframe3, setIframe3] = useState(true);
+    const [iframe4, setIframe4] = useState(true);
+    const [iframe5, setIframe5] = useState(true);
+    const [iframe6, setIframe6] = useState(true);
+    const [iframe7, setIframe7] = useState(true);
+    const [iframe8, setIframe8] = useState(true);
+    const [iframe9, setIframe9] = useState(true);
+    const [iframe10, setIframe10] = useState(true);
     const [vantaEffect, setVantaEffect] = useState(null);
     const myRef = useRef(null);
     useEffect(() => {
@@ -174,6 +182,11 @@ const Home = (props) => {
                     </h3>
                     <br />
                     <h2 className="big_h3">
+                        Overall, AI can help businesses streamline their
+                        operations, improve efficiency, and improve product and
+                        customer experience.
+                    </h2>
+                    <h2 className="nones" style={{ display: "none" }}>
                         Overall, AI can help businesses streamline their
                         operations, improve efficiency, and improve product and
                         customer experience.
@@ -531,11 +544,41 @@ const Home = (props) => {
                 <div className="scroll_boxx">
                     <div className="scroll_migh">
                         <div>
-                            <img
-                                style={{ width: "100%", height: "210px" }}
-                                src={leftPhote}
-                                alt=""
-                            />
+                            <div style={{ position: "relative" }}>
+                                {iframe6 ? (
+                                    <div onClick={() => setIframe6(false)}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "210px",
+                                            }}
+                                            src={leftPhote}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos3">
+                                        <div class="ratio-inner ratio-4-5">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
 
                         <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
@@ -547,11 +590,41 @@ const Home = (props) => {
                     </div>
                     <div className="scroll_migh">
                         <div>
-                            <img
-                                style={{ width: "100%", height: "210px" }}
-                                src={leftPhote}
-                                alt=""
-                            />
+                            <div style={{ position: "relative" }}>
+                                {iframe7 ? (
+                                    <div onClick={() => setIframe7(false)}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "210px",
+                                            }}
+                                            src={leftPhote}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos3">
+                                        <div class="ratio-inner ratio-4-5">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
 
                         <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
@@ -563,11 +636,41 @@ const Home = (props) => {
                     </div>
                     <div className="scroll_migh">
                         <div>
-                            <img
-                                style={{ width: "100%", height: "210px" }}
-                                src={leftPhote}
-                                alt=""
-                            />
+                            <div style={{ position: "relative" }}>
+                                {iframe8 ? (
+                                    <div onClick={() => setIframe8(false)}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "210px",
+                                            }}
+                                            src={leftPhote}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos3">
+                                        <div class="ratio-inner ratio-4-5">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                         <p className="p_scr">CEO Layerswift</p>
@@ -578,11 +681,41 @@ const Home = (props) => {
                     </div>
                     <div className="scroll_migh">
                         <div>
-                            <img
-                                style={{ width: "100%", height: "210px" }}
-                                src={leftPhote}
-                                alt=""
-                            />
+                            <div style={{ position: "relative" }}>
+                                {iframe9 ? (
+                                    <div onClick={() => setIframe9(false)}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "210px",
+                                            }}
+                                            src={leftPhote}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos3">
+                                        <div class="ratio-inner ratio-4-5">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                         <p className="p_scr">CEO Layerswift</p>
@@ -593,41 +726,41 @@ const Home = (props) => {
                     </div>
                     <div className="scroll_migh">
                         <div>
-                            <img
-                                style={{ width: "100%", height: "210px" }}
-                                src={leftPhote}
-                                alt=""
-                            />
-                        </div>
-                        <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
-                        <p className="p_scr">CEO Layerswift</p>
-                        <div style={{ display: "flex", alignItems: "center" }}>
-                            <img width={"35%"} src={z} alt="" />
-                            <h5>5.9</h5>
-                        </div>
-                    </div>
-                    <div className="scroll_migh">
-                        <div>
-                            <img
-                                style={{ width: "100%", height: "210px" }}
-                                src={leftPhote}
-                                alt=""
-                            />
-                        </div>
-                        <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
-                        <p className="p_scr">CEO Layerswift</p>
-                        <div style={{ display: "flex", alignItems: "center" }}>
-                            <img width={"35%"} src={z} alt="" />
-                            <h5>5.9</h5>
-                        </div>
-                    </div>
-                    <div className="scroll_migh">
-                        <div>
-                            <img
-                                style={{ width: "100%", height: "210px" }}
-                                src={leftPhote}
-                                alt=""
-                            />
+                            <div style={{ position: "relative" }}>
+                                {iframe10 ? (
+                                    <div onClick={() => setIframe10(false)}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "210px",
+                                            }}
+                                            src={leftPhote}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos3">
+                                        <div class="ratio-inner ratio-4-5">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                         <p className="p_scr">CEO Layerswift</p>
@@ -639,10 +772,41 @@ const Home = (props) => {
                 </div>
             </div>
             {/*  */}
-            <div class="main_video">
-                <div class="main_video_box">
-                    <div class="main_image">
-                        <img src={leftPhote} alt="" />
+            <div className="main_video">
+                <div className="main_video_box">
+                    <div className="main_image">
+                        <div style={{ position: "relative" }}>
+                            {iframe ? (
+                                <div onClick={() => setIframe(false)}>
+                                    <img
+                                        className="main_video_img"
+                                        src={leftPhote}
+                                        alt=""
+                                    />
+                                    <img
+                                        className="play_video_img"
+                                        src={play}
+                                        alt=""
+                                    />
+                                </div>
+                            ) : (
+                                <div className="main_videos">
+                                    <div class="ratio-inner ratio-4-1">
+                                        <div class="ratio-content">
+                                            <iframe
+                                                width="95%"
+                                                height="100%"
+                                                src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                         <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                         <p className="p_scr">CEO Layerswift</p>
                         <div
@@ -653,9 +817,40 @@ const Home = (props) => {
                             <h5>5.9</h5>
                         </div>
                     </div>
-                    <div class="a">
+                    <div className="a">
                         <div>
-                            <img className="ds" src={rightPhoteTop} alt="" />
+                            <div style={{ position: "relative" }}>
+                                {iframe2 ? (
+                                    <div onClick={() => setIframe2(false)}>
+                                        <img
+                                            className="ds"
+                                            src={rightPhoteTop}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos2">
+                                        <div class="ratio-inner ratio-4-3">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                             <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                             <p className="p_scr">CEO Layerswift</p>
                             <div
@@ -670,7 +865,38 @@ const Home = (props) => {
                             </div>
                         </div>
                         <div>
-                            <img className="ds" src={rightPhoteBot} alt="" />
+                            <div style={{ position: "relative" }}>
+                                {iframe3 ? (
+                                    <div onClick={() => setIframe3(false)}>
+                                        <img
+                                            className="ds"
+                                            src={rightPhoteBot}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos2">
+                                        <div class="ratio-inner ratio-4-3">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                             <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                             <p className="p_scr">CEO Layerswift</p>
                             <div
@@ -685,9 +911,40 @@ const Home = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div class="a">
+                    <div className="a">
                         <div>
-                            <img className="ds" src={rightPhoteTop} alt="" />
+                            <div style={{ position: "relative" }}>
+                                {iframe4 ? (
+                                    <div onClick={() => setIframe4(false)}>
+                                        <img
+                                            className="ds"
+                                            src={rightPhoteTop}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos2">
+                                        <div class="ratio-inner ratio-4-3">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                             <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                             <p className="p_scr">CEO Layerswift</p>
                             <div
@@ -702,7 +959,38 @@ const Home = (props) => {
                             </div>
                         </div>
                         <div>
-                            <img className="ds" src={rightPhoteBot} alt="" />
+                            <div style={{ position: "relative" }}>
+                                {iframe5 ? (
+                                    <div onClick={() => setIframe5(false)}>
+                                        <img
+                                            className="ds"
+                                            src={rightPhoteBot}
+                                            alt=""
+                                        />
+                                        <img
+                                            className="play_video_img2"
+                                            src={play}
+                                            alt=""
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="videos2">
+                                        <div class="ratio-inner ratio-4-3">
+                                            <div class="ratio-content">
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src="https://www.youtube.com/embed/1NMZ0MpaEuY"
+                                                    title="YouTube video player"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowfullscreen
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                             <h3 style={{ lineHeight: "1.5" }}>Jane Cooper</h3>
                             <p className="p_scr">CEO Layerswift</p>
                             <div

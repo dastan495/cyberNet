@@ -13,8 +13,15 @@ import "../Header/headerAdaptive.css";
 import { Autoplay, FreeMode, Pagination, Thumbs } from "swiper";
 
 import s1 from "../../image/s1.jpg";
-import s2 from "../../image/s2.jpg";
+import s2 from "../../image/s16.jpg";
 import s3 from "../../image/s3.jpg";
+import s4 from "../../image/s4.jpg";
+import s5 from "../../image/s15.jpg";
+import s6 from "../../image/s6.jpg";
+import s7 from "../../image/s7.jpg";
+import s8 from "../../image/s8.jpg";
+import s9 from "../../image/s9.jpg";
+import s10 from "../../image/s10.jpg";
 
 export default function App() {
     return (
@@ -53,37 +60,37 @@ export default function App() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s1} alt="" />
+                            <img src={s4} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img sl">
-                            <img src={s3} alt="" />
+                            <img src={s5} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s3} alt="" />
+                            <img src={s6} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img sl">
-                            <img src={s3} alt="" />
+                            <img src={s7} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s3} alt="" />
+                            <img src={s8} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img sl">
-                            <img src={s3} alt="" />
+                            <img src={s9} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s3} alt="" />
+                            <img src={s10} alt="" />
                         </div>
                     </SwiperSlide>
                 </Swiper>
@@ -121,37 +128,37 @@ export default function App() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s1} alt="" />
+                            <img src={s4} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img sl">
-                            <img src={s3} alt="" />
+                            <img src={s5} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s3} alt="" />
+                            <img src={s6} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img sl">
-                            <img src={s3} alt="" />
+                            <img src={s7} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s3} alt="" />
+                            <img src={s8} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img sl">
-                            <img src={s3} alt="" />
+                            <img src={s9} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider_img">
-                            <img src={s3} alt="" />
+                            <img src={s10} alt="" />
                         </div>
                     </SwiperSlide>
                 </Swiper>
@@ -159,22 +166,31 @@ export default function App() {
                     <img src={s1} alt="" />
                 </div>
                 <div style={{ display: "none" }} className="slider_img sl dva">
-                    <img src={s1} alt="" />
-                </div>
-                <div style={{ display: "none" }} className="slider_img dva">
-                    <img src={s2} alt="" />
-                </div>
-                <div style={{ display: "none" }} className="slider_img sl dva">
-                    <img src={s3} alt="" />
-                </div>
-                <div style={{ display: "none" }} className="slider_img dva">
-                    <img src={s1} alt="" />
-                </div>
-                <div style={{ display: "none" }} className="slider_img sl dva">
                     <img src={s2} alt="" />
                 </div>
                 <div style={{ display: "none" }} className="slider_img dva">
                     <img src={s3} alt="" />
+                </div>
+                <div style={{ display: "none" }} className="slider_img sl dva">
+                    <img src={s4} alt="" />
+                </div>
+                <div style={{ display: "none" }} className="slider_img dva">
+                    <img src={s5} alt="" />
+                </div>
+                <div style={{ display: "none" }} className="slider_img sl dva">
+                    <img src={s6} alt="" />
+                </div>
+                <div style={{ display: "none" }} className="slider_img dva">
+                    <img src={s7} alt="" />
+                </div>
+                <div style={{ display: "none" }} className="slider_img sl dva">
+                    <img src={s8} alt="" />
+                </div>
+                <div style={{ display: "none" }} className="slider_img dva">
+                    <img src={s9} alt="" />
+                </div>
+                <div style={{ display: "none" }} className="slider_img sl dva">
+                    <img src={s10} alt="" />
                 </div>
             </div>
         </>

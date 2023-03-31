@@ -45,7 +45,7 @@ const Meeting = () => {
             });
     };
     const [menuState, setMenuState] = useState(false);
-
+    const [submit, setSubmit] = useState(true);
     return (
         <div>
             <div className="up_navbar">
@@ -71,178 +71,203 @@ const Meeting = () => {
                 </div>
             )}
             <MeetHeader setMenuState={setMenuState} />
-            <div
-                style={{
-                    color: "black",
-                    width: "85%",
-                    margin: "auto",
-                    marginTop: "30px",
-                    marginBottom: "20px",
-                }}
-                className={visible === false ? "container" : "hidden_block"}
-            >
-                <h1>Book meeting</h1>
-                <h3>Fill out the form and we will come as soon as possible</h3>
-                <div className="main_meeting1">
-                    <div style={{ width: "40%" }}>
-                        <div className="main_meeting">
-                            <p>Full Name</p>
-                            <input
-                                placeholder="Johne Doe"
-                                type="text"
-                                onChange={(event) => {
-                                    setName(event.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="main_meeting">
-                            <p>Phone</p>
-                            <input
-                                placeholder="819-234-22-22"
-                                type="text"
-                                onChange={(event) => {
-                                    setPhone(event.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="main_meeting">
-                            <p>E-Mail</p>
-                            <input
-                                placeholder="example@example.com"
-                                type="text"
-                                onChange={(event) => {
-                                    setEmail(event.target.value);
-                                }}
-                            />
-                        </div>
-                    </div>
-                    <div style={{ width: "50%" }}>
-                        <div className="main_meeting">
-                            <p>Company Name</p>
-                            <input
-                                placeholder="example"
-                                type="text"
-                                onChange={(event) => {
-                                    setComp(event.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="main_meeting">
-                            <p>Web Site(If Have)</p>
-                            <input
-                                placeholder="www.example.com"
-                                type="text"
-                                onChange={(event) => {
-                                    setSite(event.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="main_meeting met1">
-                            <p>Type of activity of your company(briefly)</p>
-                            <textarea
-                                placeholder="Choose services"
-                                type="text"
-                                onChange={(event) => {
-                                    setAct(event.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="main_meeting met1">
-                            <p>What language would you like to speak</p>
-                            <input
-                                placeholder="English, Russian, Armenian"
-                                type="text"
-                                onChange={(event) => {
-                                    setLang(event.target.value);
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div className="btn_block">
-                    <button
-                        onClick={() => {
-                            setVisible(true);
+            {submit ? (
+                <>
+                    <div
+                        style={{
+                            color: "black",
+                            width: "85%",
+                            margin: "auto",
+                            marginTop: "30px",
+                            marginBottom: "20px",
                         }}
-                        className="next_btn"
+                        className={
+                            visible === false ? "container" : "hidden_block"
+                        }
                     >
-                        Next{" "}
-                    </button>
-                </div>
-            </div>
-            <div
-                style={{
-                    padding: "20px",
-                    color: "black",
-                    width: "85%",
-                    margin: "auto",
-                    marginTop: "30px",
-                    marginBottom: "20px",
-                }}
-                className={visible ? "container" : "hidden_block"}
-            >
-                <h1 style={{ color: "black" }}>Book meeting</h1>
-                <h3 style={{ color: "black" }}>
-                    Fill out the form and we will come as soon as possible
-                </h3>
-                <div className="main_meeting1">
-                    <div style={{ width: "40%" }}>
-                        <div className="main_meeting">
-                            <p>Month</p>
-                            <input
-                                placeholder="January"
-                                type="text"
-                                onChange={(event) => {
-                                    setMonth(event.target.value);
-                                }}
-                            />
+                        <h1>Book meeting</h1>
+                        <h3>
+                            Fill out the form and we will come as soon as
+                            possible
+                        </h3>
+                        <div className="main_meeting1">
+                            <div style={{ width: "40%" }}>
+                                <div className="main_meeting">
+                                    <p>Full Name</p>
+                                    <input
+                                        placeholder="Johne Doe"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setName(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                                <div className="main_meeting">
+                                    <p>Phone</p>
+                                    <input
+                                        placeholder="819-234-22-22"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setPhone(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                                <div className="main_meeting">
+                                    <p>E-Mail</p>
+                                    <input
+                                        placeholder="example@example.com"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setEmail(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                            <div style={{ width: "50%" }}>
+                                <div className="main_meeting">
+                                    <p>Company Name</p>
+                                    <input
+                                        placeholder="example"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setComp(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                                <div className="main_meeting">
+                                    <p>Web Site(If Have)</p>
+                                    <input
+                                        placeholder="www.example.com"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setSite(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                                <div className="main_meeting met1">
+                                    <p>
+                                        Type of activity of your
+                                        company(briefly)
+                                    </p>
+                                    <textarea
+                                        placeholder="Choose services"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setAct(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                                <div className="main_meeting met1">
+                                    <p>What language would you like to speak</p>
+                                    <input
+                                        placeholder="English, Russian, Armenian"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setLang(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                            </div>
                         </div>
-                        <div className="main_meeting">
-                            <p>Day</p>
-                            <input
-                                placeholder="819-234-22-22"
-                                type="text"
-                                onChange={(event) => {
-                                    setDay(event.target.value);
+                        <div className="btn_block">
+                            <button
+                                onClick={() => {
+                                    setVisible(true);
                                 }}
-                            />
-                        </div>
-                        <div className="main_meeting">
-                            <p>Select time for meeting</p>
-                            <input
-                                placeholder="11pm-2pm"
-                                type="text"
-                                onChange={(event) => {
-                                    setTime(event.target.value);
-                                }}
-                            />
+                                className="next_btn"
+                            >
+                                Next{" "}
+                            </button>
                         </div>
                     </div>
-                    <div style={{ width: "50%" }}>
-                        <div className="main_meeting met1">
-                            <p>Write Comment</p>
-                            <textarea
-                                placeholder="Comment"
-                                type="text"
-                                onChange={(event) => {
-                                    setComment(event.target.value);
+                    <div
+                        style={{
+                            padding: "20px",
+                            color: "black",
+                            width: "85%",
+                            margin: "auto",
+                            marginTop: "30px",
+                            marginBottom: "20px",
+                        }}
+                        className={visible ? "container" : "hidden_block"}
+                    >
+                        <h1 style={{ color: "black" }}>Book meeting</h1>
+                        <h3 style={{ color: "black" }}>
+                            Fill out the form and we will come as soon as
+                            possible
+                        </h3>
+                        <div className="main_meeting1">
+                            <div style={{ width: "40%" }}>
+                                <div className="main_meeting">
+                                    <p>Month</p>
+                                    <input
+                                        placeholder="January"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setMonth(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                                <div className="main_meeting">
+                                    <p>Day</p>
+                                    <input
+                                        placeholder="819-234-22-22"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setDay(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                                <div className="main_meeting">
+                                    <p>Select time for meeting</p>
+                                    <input
+                                        placeholder="11pm-2pm"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setTime(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                            <div style={{ width: "50%" }}>
+                                <div className="main_meeting met1">
+                                    <p>Write Comment</p>
+                                    <textarea
+                                        placeholder="Comment"
+                                        type="text"
+                                        onChange={(event) => {
+                                            setComment(event.target.value);
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="btn_block">
+                            <button
+                                onClick={() => {
+                                    send_mail();
+                                    setSubmit(false);
                                 }}
-                            />
+                                className="next_btn"
+                            >
+                                Submit{" "}
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div className="btn_block">
+                </>
+            ) : (
+                <div className="thenk">
+                    <h1>thanks for contacting us wait for the reply</h1>
                     <button
                         onClick={() => {
-                            send_mail();
                             navigate("/");
+                            setSubmit(true);
                         }}
-                        className="next_btn"
                     >
-                        Submit{" "}
+                        home
                     </button>
                 </div>
-            </div>
+            )}
         </div>
     );
 };

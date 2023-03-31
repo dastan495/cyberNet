@@ -59,6 +59,26 @@
 .hidden_block {
     display: none;
 }
+.thenk {
+    width: 90%;
+    margin: auto;
+    height: 70vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thenk > button {
+    width: 220px;
+    height: 55px;
+    background: linear-gradient(88.32deg, #0679c1 1.42%, #02d6dd 109.3%);
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    margin-top: 30px;
+}
 @media (max-width: 1100px) {
     .main_meeting1 {
         flex-direction: column;
@@ -78,5 +98,11 @@
 @media (max-width: 700px) {
     .main_meeting p {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .thenk > h1 {
+        font-size: 18px;
     }
 }
