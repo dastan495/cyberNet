@@ -30,7 +30,7 @@ const Footer = () => {
               style={{ textDecoration: "none", color: "white" }}
               href="tel:+ (39) 081 3443 748"
             >
-              + (39) 081 3443 748
+              + 1 818 858 12 08
             </a>
           </div>
           <div className="cols__footer">
